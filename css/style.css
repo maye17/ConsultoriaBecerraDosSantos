@@ -146,7 +146,6 @@ a {
     color: white;
     display: flex;
     justify-content: center;
-    font-weight: 800;
     font-size: 80px;
     font-style: normal;
     line-height: 0.5;
@@ -769,31 +768,44 @@ a {
 }
 
 .box__content__service-all {
-    margin: 60px 60px;
-    padding: 0 20px;    
+    margin-top: 60px;
+    padding: 0 20px;  
+    align-content: center;
+    width: 100%;  
 }
 
 
 .box__content__service__articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 40px;
     margin: 0 auto;
-/*     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin: 50px; */
+    justify-content: center;
+    align-content: center;
+    max-width: 1200px;
+
 }
 .box__content__service-article {
-    background-color: rgba(55, 0, 255, 0.83);
+    background-color:rgba(47, 45, 82, 0.564);
     padding: 20px;
     width: 400px;
     height: 400px;
     border-radius: 18px;
     box-shadow: 0 25px 50px -12px rgb(0, 0, 6);
     margin: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
 }
 
+.box__content__service-article img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+
+
+}
 .box__boton_service {
     display: flex;
     justify-content: center;
@@ -824,15 +836,7 @@ a {
 
 }
 /* Planes  */
-.box__content__plans{
-    display: flex;
-    width: 100%;
-    margin-bottom: 30px;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 
-}
 .box__content__plan-head {
     background-image: url(../assets/Image/geometric.jpg);
     height: 60vh;
@@ -876,7 +880,6 @@ a {
 .box__content__plan-title p {
     font-size: 25;
     font-style: normal;
-    font-weight: bold;
     margin: 25px;
     text-align: center;
 }
@@ -885,6 +888,7 @@ a {
     margin-top: 60px;
     padding: 0 20px;
     width: 100%;
+    align-content: center;
     
 }
 
@@ -894,7 +898,8 @@ a {
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
-    justify-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .box__content__plan-article {
@@ -931,12 +936,24 @@ a {
     padding-left: 5px;
 }
 
+.box__content__plan-price-ol {
+margin-top: 30px;
+padding: 50px;
+}
+
 .box__content__plan-price-li {
     margin-top: 20px;
     margin-left: 15px;
     font-size: 20px;
     list-style-type: disc;
 
+}
+
+.box__content__plan-btn {
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box__btn-plan {
@@ -946,10 +963,15 @@ a {
     width: 260px;
     background-color: white;
     border-radius: 15px;
-    align-self: center;
-    margin-top: 70px;
-    margin-left: 40px;
+    margin-bottom: 20px;
+    
 
+}
+
+.box__btn-plan:hover {
+    border: 3px solid blue;
+    background-color: rgba(107, 102, 102, 0.892);
+    color: white;
 }
 
 
@@ -960,6 +982,11 @@ a {
         font-size: 20px;
     }
 
+    .banner__title__text-2 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
     .cards__content {
         grid-template-columns:  repeat(2, 1fr);
         max-width: 80%;
@@ -967,8 +994,7 @@ a {
         }
     
         .card {
-        width: 300px;
-        
+        width: 300px;      
         margin-bottom: 30px;
         }
 
@@ -976,7 +1002,64 @@ a {
         width: 230px;
     }    
 
+
+        /* Responsive de servicios */
+
+        .box__content__service-all {
+            margin: 60px 0;
+        }  
+            
+
+
+    .box__content__service-head h2 {
+        color:black;
+        font-size: 50px;
+    }
+
+    .box__content__service-head h3 {
+        color: white;
+    }
+    .box__content__service__articles {
+        grid-template-columns:  repeat(2, 1fr);
+        max-width: 50%;
+    }
+
+
+
+    .box__content__service-article {
+        margin:10px;
+    }
+    
+     /* Responsive para planes */
+
+     .box__content__plan {
+         margin: 60px 0;
+     }
+    .box__content__plan-articles {
+        grid-template-columns:  repeat(2, 1fr);
+        max-width: 50%;
+
+    }
+
+    .box__content__plan-article {
+        margin-bottom: 30px;
+    }
+
+    .box__content__plan-price-li {
+        font-size: 15px;
+    }
+
+    .box__btn-plan {
+        width: 130px;
+        font-size: 15px;
+        border: 2px solid black;
+    }
+
+
+
 }
+
+
 
 @media (max-width:1024px) {
     
@@ -1132,19 +1215,34 @@ a {
         
     }
     
-    .header__content-us-title {
-     
+    .box__content__service-head h2 {
+        margin-top: 10vh;
+        font-size: 60px;
+        text-align: center;
         color: white;
     }
     
     
     
-    .header__content-us-subtitle {
+    .box__content__service-head h3 {
+        font-size: 40px;
         color: white;
+        text-align: center;
+        margin-top: 5vh;
     }
 
 .box__content__service-all{
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.box__content__service-title{
+    margin: 0 auto;
+    font-size: 50px;
+    margin-top: 5vh;
 
 }
 
@@ -1170,6 +1268,15 @@ a {
         max-width: 60%;
         font-size: 25px;
     }
+    /* Responsive para planes */
+    .box__content__plan-article {
+        grid-template-columns:  repeat(2, 1fr);
+        max-width: 80%;
+        justify-items: center;
+        margin: 30px 0;
+        }
+
+        
 
 }
 
@@ -1301,6 +1408,69 @@ a {
 .ytp-cued-thumbnail-overlay-image {
     max-width: 50%;
 }
+
+/* Responsive servicios a 811px */
+.box__content__service-head{
+    background-image: url(../assets/Image/geometric.jpg);
+    background-repeat : no-repeat;
+    height: 30vh;
+    
+}
+
+.box__content__service-head h2 {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.box__content__service-head h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.box__content__service-all{
+margin: 0 auto;
+padding: 0;
+
+}
+
+.box__content__service__articles {
+grid-template-columns:  repeat(1, 1fr);
+max-width: 50%;
+margin: 0 ;
+padding: auto;
+}
+
+
+.box__content__service-article  {
+width: 300px;
+margin:30px 0;
+}
+
+.box__boton_service {
+    margin-bottom: 30px;
+
+}
+.box__boton-presu {
+    max-width: 60%;
+    font-size: 25px;
+}
+
+
+/* Responsive para planes */
+
+.box__content__plan-articles {
+    grid-template-columns:  repeat(1, 1fr);
+    max-width: 50%;
+    margin: 0 ;
+    padding: auto;
+}
+
+.box__content__plan-article {
+    margin:30px 0;
+}
+
 
 }
 
