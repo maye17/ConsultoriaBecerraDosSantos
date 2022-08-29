@@ -786,7 +786,7 @@ a {
 
 }
 .box__content__service-article {
-    background-color:rgba(47, 45, 82, 0.564);
+    background-color: rgb(85, 115, 166);
     padding: 20px;
     width: 400px;
     height: 400px;
@@ -863,10 +863,13 @@ a {
     font-size: 50px;
     font-weight: bold;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(1, 20, 89);
+   
 }
 
 
@@ -910,6 +913,7 @@ a {
     background-color:#2513D1;
     color:white;
     border-radius: 10px;
+    justify-content: center;
 
 }
 .box__content__plan-article h3 {
@@ -975,9 +979,11 @@ padding: 50px;
 }
 
 
-/* Media Queries index */
+/* Media Queries para todo el proyecto */
 
 @media (max-width:1250px) {
+
+    /* Responsive Index */
     .header__content-option {
         font-size: 20px;
     }
@@ -1014,10 +1020,13 @@ padding: 50px;
     .box__content__service-head h2 {
         color:black;
         font-size: 50px;
+        
     }
 
     .box__content__service-head h3 {
         color: white;
+        background-color: rgba(3, 3, 49, 0.653);
+        margin: 0 200px;
     }
     .box__content__service__articles {
         grid-template-columns:  repeat(2, 1fr);
@@ -1035,14 +1044,21 @@ padding: 50px;
      .box__content__plan {
          margin: 60px 0;
      }
+
+     .box__content__plan-head h3 {
+         font-size: 40px;
+         margin: auto 30px;
+     }
     .box__content__plan-articles {
         grid-template-columns:  repeat(2, 1fr);
         max-width: 50%;
+        justify-content: center;
 
     }
 
     .box__content__plan-article {
         margin-bottom: 30px;
+        justify-content: center;
     }
 
     .box__content__plan-price-li {
@@ -1272,11 +1288,9 @@ padding: 50px;
     .box__content__plan-article {
         grid-template-columns:  repeat(2, 1fr);
         max-width: 80%;
-        justify-items: center;
-        margin: 30px 0;
-        }
-
-        
+        justify-content: center;
+        margin: auto;
+        }       
 
 }
 
@@ -1469,8 +1483,15 @@ margin:30px 0;
 
 .box__content__plan-article {
     margin:30px 0;
+    justify-content: center;
 }
 
+    /* responsive de planes */
+
+    .box__content__plan-head h3 {
+        font-size: 40px;
+        margin: auto 30px;
+    }
 
 }
 
@@ -1518,5 +1539,12 @@ margin:30px 0;
 
     .card__description {
         font-size: 10px;
+    }
+
+    /* responsive de planes */
+
+    .box__content__plan-head h3 {
+        font-size: 25px;
+        margin: auto 30px;
     }
 }
