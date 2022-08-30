@@ -132,6 +132,7 @@ a {
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
+    background-color: rgba(3, 3, 49, 0.653);
     margin: 15vh 5vh;
 /*     -webkit-text-stroke: 1px rgb(253, 253, 253);
   color: solid;  */
@@ -799,12 +800,25 @@ a {
     justify-content: center;
 }
 
+.box__content__service-article h3 {
+    color: white;
+    font-size: 18px;
+}
+
 .box__content__service-article img {
-        width: 200px;
+        width: 150px;
         height: 150px;
-        border-radius: 10px;
+        border-radius: 74px;
+        background-color: aliceblue;
+        margin-top: 15px;
 
+}
 
+.box__content__service-article p {
+    margin-top: 15px;
+    font-size: 15px;
+    text-align:justify;
+    color: white;
 }
 .box__boton_service {
     display: flex;
@@ -1019,7 +1033,8 @@ padding: 50px;
 
     .box__content__service-head h2 {
         color:black;
-        font-size: 50px;
+        font-size: 60px;
+        text-align: center;
         
     }
 
@@ -1027,6 +1042,7 @@ padding: 50px;
         color: white;
         background-color: rgba(3, 3, 49, 0.653);
         margin: 0 200px;
+        text-align: center;
     }
     .box__content__service__articles {
         grid-template-columns:  repeat(2, 1fr);
@@ -1237,7 +1253,7 @@ padding: 50px;
         text-align: center;
         color: white;
     }
-    
+     
     
     
     .box__content__service-head h3 {
@@ -1245,6 +1261,7 @@ padding: 50px;
         color: white;
         text-align: center;
         margin-top: 5vh;
+
     }
 
 .box__content__service-all{
@@ -1432,8 +1449,9 @@ padding: 50px;
 }
 
 .box__content__service-head h2 {
-    font-size: 20px;
+    font-size: 35px;
     color: white;
+    text-align: center;
 }
 
 
@@ -1441,6 +1459,7 @@ padding: 50px;
 .box__content__service-head h3 {
     font-size: 20px;
     color: white;
+    margin: 0 200px;
 }
 
 .box__content__service-all{
@@ -1477,7 +1496,6 @@ margin:30px 0;
 .box__content__plan-articles {
     grid-template-columns:  repeat(1, 1fr);
     max-width: 50%;
-    margin: 0 ;
     padding: auto;
 }
 
