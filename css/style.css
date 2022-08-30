@@ -490,38 +490,40 @@ a {
 }
 
 .box__contenedor {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    margin-bottom: 30px;
-    flex-direction: row;
+    margin: 30px 0;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
 }
 
 .box__container-title-contact {
-    background-color: #030331;
+     background-color: #030331;
     background-image: url(../assets/Image/call-center.jpg);
     height: 60vh;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
+    background-repeat : no-repeat;
     display: inline-block;
-    position: relative;
+    position: relative; 
 
 }
 
 .box__container-title-contact h2 {
     display: flex;
     justify-content: flex-start;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin: 80px 40px;
+
     font-size: 80px;
     align-self: center;
     color: white;
 }
 
 .box__container-title-contact h3 {
-    margin-top: 200px;
+    margin-top: 80px;
+    margin-left: 50px;
     display: flex;
     justify-content: flex-start;
     color: rgb(248, 248, 248);
@@ -539,7 +541,7 @@ a {
     align-items: flex-start;
     height: 800px;
     border-radius: 15px;
-    margin: 0 50px;
+    margin: 15px 50px;
     border: 0px solid black;    
 
 }
@@ -647,62 +649,69 @@ a {
 
 }
 
-.box__container-contact-seg {
+.box__container__contact-data{
     background-color: rgb(6, 6, 68);
-    height: 800px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+/*     height: 800px;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0 50px;
-   
-
+    margin: 0 50px; */
 }
-.box__cont-article {
-     display: flex;
-     padding: 20px;
+.box__contact__article {
+/*      display: flex;
+     padding: 10px;
      flex-flow:row wrap;
      justify-content: space-between;
      align-items: flex-start;
-     margin: 0;
+     margin: 20px; */
+     display: grid;
+     grid-template-areas: 
+     "img titulo"
+     "img contenido";
+
 }
 
-.box__container-img {
+.box__contact__article img {
+    grid-area: img;
+    gap: 20px;
     background-color: white;
-    position: relative;
-    top: 15vh;
     width: 60px;
     height: 60px;
-    left: 10vh;
+    margin-top: 85px;
     margin-left: 90px;
     margin-right: 50px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 13px;
 
 }
 
 .box__company {
-    width: 0;
+    grid: titulo;
+    gap: 30px ;
     color: white;
     font-size: 20px;
-    position: relative;
-    top: 10vh;
-    left: 15vh;
+    margin-top: 70px;
+    margin-left: 30px;
     
 }
 .box__contact_des {
+    grid: contenido;
     width: 70%;
-    position: relative;
-    top: 10vh;
     color: white;
-    margin: 50px 50px 50px 30px;
-    padding-right: 40px;    
+    margin: 30px;
+    padding-right: 40px; 
 
 }
 
-.box__location {
+.box__content__location {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
 }
-.box__location h2 {
+.box__content__location h2 {
 
     font-size: 60px;
     font-family: 'Nunito Sans', sans-serif;
@@ -714,9 +723,19 @@ a {
     padding: 15px;
 }
 
-.box__location-ubi {
-    width: 100%;
-    flex-direction: row;
+
+.box__content__location-map {
+    overflow:hidden;
+    padding-bottom:400px; 
+    position:relative;
+    height:0;
+}
+.box__content__location-map iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 
     
 }
@@ -1087,6 +1106,16 @@ padding: 50px;
         border: 2px solid black;
     }
 
+    /* Responsive para contactos */
+    .box__container-title-contact {
+        background-image: url(../assets/Image/geometric.jpg);
+
+    }
+
+    .box__contact__article {
+        justify-content: center;
+        align-content: center;
+    }
 
 
 }
@@ -1309,6 +1338,18 @@ padding: 50px;
         margin: auto;
         }       
 
+        /* Responsive para contacto */
+
+        .box__container-title-contact h2 {
+            font-size: 55px;
+        }
+        .box__container-title-contact h3 {
+            font-size: 25px;
+        }
+    .box__location h2 {
+        font-size: 55px;
+    }    
+
 }
 
 
@@ -1510,6 +1551,25 @@ margin:30px 0;
         font-size: 40px;
         margin: auto 30px;
     }
+
+    /* responsive para contactos */
+    
+    .box__contenedor {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+    }
+
+    .box__content-location-map {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    
+   .box__content-location iframe {
+        max-width: 50%;
+        height: 300px ;
+            
+     }
 
 }
 
