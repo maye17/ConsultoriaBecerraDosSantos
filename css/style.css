@@ -84,6 +84,7 @@ a {
 
 }
 
+
 .header__content-menu {
     display: flex;
     flex-flow: row wrap;
@@ -96,11 +97,16 @@ a {
     margin: 0 15px;
 }
 
+
+
 .header__content-option:hover {
     transform:  translateX(50px);
     border-bottom: 3px solid blue;
-    color: rgb(125, 188, 243);
-    font-size: 27px;
+    color: rgb(125, 188, 243); 
+
+
+    font-size: 30px;
+    transition: all 500ms;
     
 }
 
@@ -164,11 +170,11 @@ a {
 /* Articulos */
 /* aplicando flex */
 .boxs__titles {
-    margin: 10vh;
+    margin: 10vh 0;
     display: grid;
     grid-template-rows: repeat(3, 0.5fr); 
     z-index: 0;
-    
+
 }
 
 .box__title-image {
@@ -224,7 +230,7 @@ a {
  
     position: absolute;
     right: 5.8%;
-    top: 90%;
+    top: 83%;
     z-index: -1;
     
 }
@@ -308,17 +314,18 @@ a {
 
 
 .box__description {
-    font-family: 'Nunito Sans', sans-serif;
+
     font-size: 20px;
     display: flex;
     flex-flow: row wrap;
-    margin: 10px;
+    margin: 10px 250px;
     justify-content: center;
     align-self: center;
     z-index: 0;
     animation-name: Boxtitle;
     animation-duration: 1s;
     animation-timing-function: linear;
+    letter-spacing: normal;
 
 
 }
@@ -456,11 +463,27 @@ a {
     justify-content: center;
     align-self: flex-start;
     padding: 5px;
-    background-color: rgba(136, 136, 223, 0.316);
-    border-radius: 25px;
     margin: 30px 5px 15px 55px;
-    border: 2px solid rgb(1, 208, 255);
+
     
+}
+
+
+.footer__content-red-color {
+
+    background-color: rgba(136, 136, 223, 0.316);
+    border-radius: 25px;  
+    border: 2px solid rgb(1, 208, 255);
+    transition: all 600ms;
+
+}
+
+
+.footer__content-red-color:hover {
+    background-image: radial-gradient(circle, #0b0b51, #1f1272, #351893, #4e1cb6, #6a1ed8);
+    border:2px solid #61006E;
+    transform: scale(1.3);
+
 }
 
 .footer__content-red-tw {
@@ -469,10 +492,8 @@ a {
     justify-content: center;
     align-self: flex-end;
     padding: 5px;
-    background-color: rgba(136, 136, 223, 0.316);
-    border-radius: 25px;
     margin: 30px 5px 15px 5px;
-    border: 2px solid rgb(1, 208, 255);
+
 }
 
 .footer__content-red-ins {
@@ -482,10 +503,8 @@ a {
     justify-content: center;
     align-self: center;
     padding: 5px;
-    background-color: rgba(136, 136, 223, 0.316);
-    border-radius: 25px;
     margin: 30px 15px 15px 5px;
-    border: 2px solid rgb(1, 208, 255);
+
 }
 
   /* Estilo de nosotros */
@@ -550,26 +569,51 @@ a {
     flex-flow:column nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    background-image: radial-gradient(circle, #11052f, #110835, #100b3b, #100d42, #100e48);
+    color: white;
+    animation-name: MisionMov;
+    animation-duration: 1s ;
+    animation-timing-function:linear;
 }
+
+@keyframes MisionMov {
+    0% {
+
+        top: 20px;
+        transform:translateY(10%);
+    }
+
+    100% {
+
+        top: 80px;
+        transform:translateY(5%) 
+    }
+}
+
+
 
 .box__content {
     display: flex;
     flex-flow:row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
+    margin: 0 auto;
+    padding: 0;
 }
+
 .box__content-title {
     font-size: 30px;
-    margin: 30px;
-    padding: 15px;
+    margin: 15px 30px;
+    padding: 0 15px;
     display: flex;
     align-items:baseline;
+    text-align: center;
 
 
 }
 .box__content__des-title {
     font-size: 20px;
-    margin: 15px;
+    margin: 15px 30px;
     padding:0 30px;
     display: flex;
     justify-content: center;
@@ -597,7 +641,23 @@ a {
 .box__content-img { 
 
   height: 80vh;
+  animation-name: ImgMov;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 
+}
+
+@keyframes ImgMov {
+
+    0% {
+        top: 20px;
+        transform: translateY(10%);
+    }
+    
+    100% {
+        top: 80px;
+        transform: translateY(5%);
+    }
 }
 
 .box__content__info {
@@ -773,7 +833,13 @@ a {
     font-weight: bold;
     font-style: oblique; 
     border-radius: 3px;  
+    transition: all 500ms;
 
+}
+
+.box__boton-send:hover {
+    background-image: radial-gradient(circle, #121269, #221784, #341ba0, #481dbc, #5e1ed8);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .box__boton-clean {
@@ -784,6 +850,13 @@ a {
     font-weight: bold;
     font-style: oblique; 
     border-radius: 3px;
+    transition: all 500ms;
+
+}
+
+.box__boton-clean:hover {
+    background-image: radial-gradient(circle, #f8da06, #f6e14e, #f5e777, #f4ed9b, #f5f2be);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -791,19 +864,10 @@ a {
     background-color: rgb(6, 6, 68);
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-/*     height: 800px;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 50px; */
+
 }
 .box__contact__article {
-/*      display: flex;
-     padding: 10px;
-     flex-flow:row wrap;
-     justify-content: space-between;
-     align-items: flex-start;
-     margin: 20px; */
+
      display: grid;
      grid-template-areas: 
      "img titulo"
@@ -944,7 +1008,9 @@ a {
 
 }
 .box__content__service-article {
-    background-color: rgb(85, 115, 166);
+
+    background-image: radial-gradient(circle, #20367c, #1c3990, #1a3ba5, #1d3cb9, #253ccd);
+    color: white;
     padding: 20px;
     width: 400px;
     height: 400px;
@@ -955,15 +1021,9 @@ a {
     flex-flow: row wrap;
     align-content: center;
     justify-content: center;
+    text-align: center;
+    transition: all 0.5s;
     
-}
-
-.box__content__plan-article:hover {
-    background-color: white;
-    color: #013553;
-    transform: translateY(-40px);
-    box-shadow: 5px 10px #888888;
-    transition: 0.5s;
 }
 
 
@@ -973,8 +1033,21 @@ a {
         height: 150px;
         border-radius: 74px;
         background-color: aliceblue;
-        margin-top: 15px;
+        margin-left: 30px;
+        justify-content: center;
+        margin-bottom: 15px;
+        transition: all 400ms;
 
+}
+
+
+.box__content__service-article h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 20px;
+    transition: all 500ms;
+    
 }
 
 .box__content__service-article p {
@@ -982,7 +1055,42 @@ a {
     font-size: 15px;
     text-align:justify;
     color: white;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 600ms;
 }
+
+/* Efecto hover */
+
+.box__content__service-article:hover {
+    background-image: radial-gradient(circle, #050c2f, #121137, #22123f, #321144, #430e48);
+    border: 3px solid white;
+}
+
+.box__content__service-article:hover img {
+    transform: translateY(-90px);
+    
+}
+
+
+.box__content__service-article:hover h3 {
+    transform: translateY(-90px);
+}
+
+.box__content__service-article .service__article-p {
+    width: 100%;
+    height: 150px;
+    border-radius: 0px 0px 18px 18px;
+    
+
+}
+
+.box__content__service-article:hover .service__article-p p {
+    transform: translateY(-70px);
+    opacity: 1;
+    
+}
+
 .box__boton_service {
     display: flex;
     justify-content: center;
@@ -996,7 +1104,7 @@ a {
     border-radius: 15px;
     height: 50px;
     width: 600px;
-    background-color: rgb(10, 77, 245);
+    background-image: linear-gradient(to bottom, #1749e8, #183bc5, #152da4, #0f2084, #071465);
     color: white;
     font-size: 25px;
     text-align: center;
@@ -1007,7 +1115,7 @@ a {
 
 .box__boton-presu:hover {
     color: blue;
-    background-color:antiquewhite;
+    background-image: linear-gradient(to bottom, #fbfbfb, #efeef9, #e1e1f8, #d2d5f6, #c2c9f5);
     border: 2px solid blue;
     font-weight: bold;
 
@@ -1033,6 +1141,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .box__content__plan-head h3 {
@@ -1046,6 +1155,8 @@ a {
     justify-content: center;
     align-items: center;
     background-color: rgb(1, 20, 89);
+
+
    
 }
 
@@ -1093,6 +1204,17 @@ a {
     justify-content: center;
 
 }
+
+
+.box__content__plan-article:hover {
+    background-color: white;
+    color: #013553;
+    transform: translateY(-40px);
+    box-shadow: 5px 10px #888888;
+    transition: 0.5s;
+}
+
+
 
 /* Aplicando transformación */
 
@@ -1170,10 +1292,16 @@ padding: 50px;
         font-size: 20px;
     }
 
+    .header__content-option:hover {
+        font-size: 22px;
+    }
+
     .banner__title__text-2 {
         font-size: 50px;
         margin-bottom: 30px;
     }
+
+    
 
     .cards__content {
         grid-template-columns:  repeat(2, 1fr);
@@ -1287,6 +1415,12 @@ padding: 50px;
 .header__content-option {
     font-size: 17px;
 }
+
+.header__content-option:hover {
+    font-size: 20px;
+}
+
+
  .banner {
     background-image: url(../assets/Image/geometric.jpg);
     height: 40vh;
@@ -1305,7 +1439,7 @@ padding: 50px;
  }
 
  .boxs__titles {
-    margin: 0 auto;
+    margin: 20px auto;
 
  }
 
@@ -1393,11 +1527,45 @@ padding: 50px;
 .box__content-parent {
   
     flex-flow: column wrap;
+    animation-name: MisionMov;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes MisionMov {
+    0% {
+
+        top: 20px;
+        transform:translateX(10%);
+    }
+
+    100% {
+
+        top: 80px;
+        transform:translateX(5%) 
+    }
 }
 
 .box__content-img {
     max-width: 80%;
     max-height: 80%;
+    animation-name: ImgMov;
+    animation-duration: 1s;
+    animation-timing-function: linea;
+}
+
+
+@keyframes ImgMov {
+
+    0% {
+        top: 20px;
+        transform: translateX(-10%);
+    }
+    
+    100% {
+        top: 80px;
+        transform: translateX(5%);
+    }
 }
 
 .box__content__info h2 {
@@ -1466,10 +1634,14 @@ padding: 50px;
 
 
 .box__content__service-article  {
-    width: 300px;
-    
+    width: 300px;    
     margin-bottom: 30px;
     }
+ 
+
+    .box__content__service-title {
+        margin-bottom: 90px;
+    }    
 
     .box__boton_service {
         margin-bottom: 30px;
@@ -1551,7 +1723,7 @@ padding: 50px;
      }
 
      .boxs__titles {
-        margin: 0 auto;
+        margin: 20px auto;
     
      }
     
@@ -1669,6 +1841,10 @@ padding: auto;
 .box__content__service-article  {
 width: 300px;
 margin:30px 0;
+}
+
+.box__content__service-article:hover {
+    background-color: red;
 }
 
 .box__boton_service {
