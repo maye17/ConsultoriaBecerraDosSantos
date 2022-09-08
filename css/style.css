@@ -325,7 +325,7 @@ a {
 }
 
 
-.card {
+.card__banner {
     background-color: rgba(51, 51, 233, 0.582);
     display: flex;
     padding: 20px;
@@ -341,7 +341,7 @@ a {
 }
 
 /* Aplicando transformación */
-.card:hover {
+.card__banner:hover {
    background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,66,124,1) 100%); 
     color: white;
@@ -621,6 +621,7 @@ a {
   animation-name: ImgMov;
   animation-duration: 1s;
   animation-timing-function: linear;
+  margin-left: 30px;
 
 }
 
@@ -1288,7 +1289,7 @@ padding: 40px;
         justify-items: center;
         }
     
-        .card {
+        .card__banner {
         width: 300px;      
         margin-bottom: 30px;
         }
@@ -1461,7 +1462,7 @@ padding: 40px;
     justify-items: center;
     }
 
-    .card {
+    .card__banner {
     width: 300px;
     
     margin-bottom: 30px;
@@ -2018,7 +2019,7 @@ padding: 0;
     margin: 0 auto;
 }
 
-    .card {
+    .card__banner {
         max-width: 70%;
         max-height: 100%;
         margin-bottom: 20px;
