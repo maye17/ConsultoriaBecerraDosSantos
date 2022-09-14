@@ -1,0 +1,22 @@
+{
+  "name": "consultoria-becerradossantos",
+  "version": "1.0.0",
+  "description": "página de consultoria para gadbizz",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maye17/ConsultoriaBecerraDosSantos.git"
+  },
+  "author": "Mayerlin B Dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maye17/ConsultoriaBecerraDosSantos/issues"
+  },
+  "homepage": "https://github.com/maye17/ConsultoriaBecerraDosSantos#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
