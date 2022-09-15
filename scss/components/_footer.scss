@@ -1,0 +1,136 @@
+/* Estilo de pie de página */
+ /* Pie de página */
+ .footer {
+    background-color: rgba(3, 3, 49, 0.763) !important;
+
+    &__text {
+
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        justify-content: center;
+        font-family: 'Open Sans', sans-serif;
+
+        a {
+
+            text-decoration: none;
+            font-size: 15px;
+            color:rgb(255, 255, 255);
+            display: flex;
+            flex-flow: row nowrap;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+    }
+
+    &__content-red-color {
+
+        
+    background-color: rgba(136, 136, 223, 0.316);
+    border-radius: 25px;  
+    border: 2px solid rgb(1, 208, 255);
+    transition: all 600ms;
+
+    &:hover {
+
+        background-image: radial-gradient(circle, #0b0b51, #1f1272, #351893, #4e1cb6, #6a1ed8);
+        border:2px solid #61006E;
+        transform: scale(1.3);
+
+    }
+
+    }
+
+    &__content-red-fac {
+        color: rgb(250, 250, 250);
+        justify-content: center;
+        align-self: flex-start;
+        padding: 5px;
+        margin: 30px 5px 15px 55px;
+
+    }
+
+    &__content-red-tw {
+        color: rgb(250, 250, 250);
+        display:flex;
+        justify-content: center;
+        align-self: flex-end;
+        padding: 5px;
+        margin: 30px 5px 15px 5px;
+    
+    }
+
+    &__content-red-ins {
+        color: rgb(250, 250, 250);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-self: center;
+        padding: 5px;
+        margin: 30px 15px 15px 5px;
+    
+    }
+
+
+ 
+  }
+
+
+
+.text-color  {
+    color: white;
+}
+
+.my-4 {
+    margin-bottom: 0 !important;
+}
+
+
+@media (max-width:992px) {
+
+    .footer__content-red-fac {
+        margin: 0;
+    }
+
+    .footer__content-red-ins {
+        margin: 0;
+    }
+
+    .footer__content-red-tw {
+        margin: 0;
+    }
+    .footer__content-red-color {
+        max-width: 50%;
+
+        &:hover {
+            max-width: 70%;
+        }
+    }
+
+}
+
+
+
+@media  (max-width:576px) {
+
+    .footer__content-red-fac {
+        margin: 0;
+    }
+
+    .footer__content-red-ins {
+        margin: 0;
+    }
+
+    .footer__content-red-tw {
+        margin: 0;
+    }
+    .footer__content-red-color {
+        max-width: 50%;
+
+        &:hover {
+            max-width: 70%;
+        }
+    }
+
+
+}

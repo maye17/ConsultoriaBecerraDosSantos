@@ -1,0 +1,615 @@
+
+
+.banner {
+    background-color: rgb(231, 231, 250); 
+    background-image: url(/assets/Image/duo_project_2.jpg);
+    height: 70vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat : no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.85; 
+      
+    &__title {
+        color: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: normal;    
+        text-shadow: 1px  0px 0px black,
+        0px  1px 0px black,
+       -1px  0px 0px black,
+        0px -1px 0px black;
+
+        &__text-1 {
+        font-size: 65px;
+          font-weight: bold;  
+          text-align: center;
+          background-color: rgba(3, 3, 49, 0.653);
+          margin: 15vh 5vh;
+
+        }
+
+        &__text-2 {
+            font-size: 60px;
+          text-align: center;
+          flex-direction: row;
+          justify-content: center;
+          line-height: 0.5;    
+          margin:0 10px;
+
+        }
+    }
+      
+}
+  
+  
+// animación
+
+
+
+.shape2 {
+
+    right: 5.8%;
+    top: 29%;  
+    z-index:-1;
+    transform: translate(0px, 30px);
+
+    img {
+
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        border: 0;
+        display: block;
+        top: 25.5%;
+        left: 20%;
+        -webkit-animation: ImageMov 20s linear infinite;
+        animation: ImageMov 20s linear infinite;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: ImageMov;
+    }
+
+}
+
+
+@keyframes ImageMov {
+    0% {
+
+        top: 20px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+
+        top: 80px;
+        transform: rotate(360deg);
+    }
+}
+
+.shape3 {
+ 
+    position: absolute;
+    right: 5.8%;
+    top: 93%;
+    z-index: -1;
+
+    img {
+        -webkit-animation: shape3 20s linear infinite;
+        animation: shape3 20s linear infinite;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: shape3;
+    }
+    
+}
+
+
+@keyframes shape3 {
+    0% {
+
+        top: 20px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+
+        top: 80px;
+        transform: rotate(360deg);
+    }
+}
+
+//contenido
+
+.boxs__titles {
+    margin: 10vh 0;
+    display: grid;
+    grid-template-rows: repeat(3, 0.5fr); 
+    z-index: 0;
+
+    &-subtitle {
+
+        font-size: 60px;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        margin: 3px 0 30px 0;
+        z-index: 0;
+        animation-name: Boxtitle;
+        animation-duration: 1s;
+        animation-timing-function: linear; 
+    }
+
+    &-title {
+
+        font-size: 35px;
+        font-style: italic;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin:5px 0 5px 0;
+        z-index: 0;
+        animation-name: Boxtitle;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+    }
+
+    &-description {
+        font-size: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 10px 50px;
+        justify-content: center;
+        text-align:justify;
+        z-index: 0;
+        animation-name: Boxtitle;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        letter-spacing: normal;
+    }
+
+}
+
+@keyframes Boxtitle {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+//tarjetas
+// aplicando grid a las tarjetas del index 
+// Aplicando transformación 
+
+
+.cards{
+    margin: 50px;
+    padding: 20px;
+    
+    &__container {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 0 auto;
+
+        &-banner {
+
+            background-color: rgba(51, 51, 233, 0.582);
+            display: flex;
+            padding: 10px;
+            flex-flow:column wrap;
+            justify-content: center;
+            align-items: center;
+            border-radius: 18px;
+            box-shadow: 0 25px 50px -12px rgb(0, 0, 6);
+            margin: 0;
+            width: 350px;
+            transition:all 0.5s;
+
+            &:hover {
+
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,66,124,1) 100%); 
+                color: white;
+                border: 2px solid white;
+                transform: scale(1.02);
+
+            }
+
+            img {
+                justify-content: center;
+                width: 300px;
+                height: 220px;
+                padding: 30px 10px;
+            }
+
+            h2 {
+
+                flex-flow: row nowrap;
+                font-size: 25px;
+                margin-bottom: 20px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-style: italic;
+
+            }
+
+            p {
+
+                text-align:justify;
+                letter-spacing:normal;
+                padding: 10px;
+                font-size: 18px;
+
+            }
+
+            a{
+                color: rgb(231, 231, 250);
+                display: inline-block;
+                margin: 20px;
+                padding: 20px;
+                text-align: center;
+                border: 3px black solid;
+                border-radius: 20px;
+                border-color: azure;
+                background:  rgb(3, 3, 49);
+                font-size: 18px;
+                font-family: 'Nunito Sans', sans-serif;
+                font-style: oblique;
+                font-weight: bold;
+
+                &:hover {
+                    color: rgb(24, 24, 148);
+                    background:white;
+                    border-color: rgb(24, 24, 148);
+
+                }
+
+            }
+
+        }
+
+
+        
+    }
+
+    
+}
+
+
+/* Media Queries para todo el proyecto */
+
+@media (max-width:1250px) {
+
+    //banner
+
+    .banner__title__text-2 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    
+    //tarjetas
+
+    .cards__container {
+        grid-template-columns:  repeat(2, 1fr);
+        max-width: 80%;
+        justify-items: center;
+
+        &-banner {
+            width: 300px;      
+            margin-bottom: 30px;
+
+            img {
+                width: 230px;
+            }
+
+            p {
+                padding: 22px;
+            }
+
+        }
+    }
+
+}
+
+
+
+@media (max-width:992px) {
+    
+    .banner {
+       background-image: url(../assets/Image/geometric.jpg);
+       height: 40vh;
+
+        &__title__text-1 {
+
+           font-size: 50px;
+           margin: 5vh 15vh;
+           padding: 10px;
+        }
+
+        &__title__text-2 {
+
+           font-size: 40px;
+           margin:10px 15vh;
+        }
+
+    }
+
+
+
+
+    .boxs__titles {
+       margin: 20px auto;
+
+    
+
+        &__titles-subtitle {
+
+           font-size: 25px;
+           margin: 0 auto;
+           margin: 20px auto;
+        }
+
+        &__titles-title {
+        
+           grid-template-rows: repeat(2, 1fr);
+           font-size: 35px;
+           margin: 10px auto;
+
+        }
+
+        &__titles-description {
+
+           display: block;
+           font-size: 12px;
+           margin: 0 10px;
+        }
+
+
+    }
+
+
+     .cards {
+        margin: 5px;
+
+        &__container {
+
+            grid-template-columns:  repeat(2, 1fr);
+            max-width: 80%;
+            justify-items: center;
+            gap: 30px;
+ 
+
+
+            &-banner {
+
+                width: 320px;
+                margin-bottom: 30px;
+
+                img {
+                    width: 240px ;
+                }
+
+                p {
+                    padding: 15px;
+                }
+
+            }
+        
+        }
+
+    }
+
+
+}
+
+
+@media (max-width:768px) { 
+
+    .banner {
+
+        background-image: url(/assets/Image/geometric.jpg);
+        background-repeat : no-repeat;
+        height: 40vh;
+
+        &__title__text-1 {
+
+            font-size: 30px;
+            padding: 10px;
+
+        }
+
+        &__title__text-2 {
+    
+            font-size: 25px;
+
+          }
+        
+    }
+
+    
+
+     .boxs__titles {
+        margin: 20px auto;
+
+        &-title {
+
+            grid-template-rows: repeat(1, 1fr);
+            font-size: 32px;
+            margin: 1px auto;
+            color:  rgb(6, 6, 68);
+            font-weight: bolder;
+
+        }
+
+        &-subtitle {
+
+            font-size: 30px;
+            margin: 10px auto;
+
+        }
+
+        &-description {
+
+            display: block;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+    
+     }
+
+
+    .cards {
+         margin: 0;
+     
+        &__container {
+            grid-template-columns:  repeat(1, 1fr);
+            max-width: 50%;
+            justify-content: center;
+            gap: 5px;
+
+
+            &-banner {
+                padding: 0 auto;
+            }
+
+            h2 {
+
+                font-size: 22px;
+            }
+
+        }
+
+        .shape2 {
+        
+            display: none;
+        }
+
+        .shape3 {
+            display: none;
+
+            img {
+
+                display: none;
+            }
+        }
+    }
+
+}
+
+
+@media  (max-width:576px) {
+
+
+    .banner__title__text-1 {
+        margin: 3px;
+        padding: 0;
+        font-size: 16px;
+    }
+    .banner__title__text-2 {
+        font-size: 15px;
+        margin: 15px 3px;
+    }    
+
+    .boxs__titles {
+        margin: 20px auto;
+
+        &-title {
+
+            grid-template-rows: repeat(1, 1fr);
+            font-size: 32px;
+            margin: 1px auto;
+            color:  rgb(6, 6, 68);
+            font-weight: bolder;
+
+        }
+
+        &-subtitle {
+
+            font-size: 30px;
+            margin: 2px auto;
+
+        }
+
+        &-description {
+            padding: 12px;
+            margin: 0 10px;
+        }
+    
+     }
+
+
+    .cards {
+
+        margin: 1px;
+        padding: 0;
+    }
+
+    .cards__container {
+        align-content: center;
+        margin: 0 auto;
+        gap: auto;
+
+        &-banner {
+
+            max-width: 80%;
+            max-height: 100%;
+            margin-bottom: 20px;
+            padding: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+
+            img {
+                width: 260px ;
+                height: 200px;
+                padding: 0 auto;
+
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                padding: 10px;
+
+            }
+
+            a {
+                font-size: 18px;
+                padding: 7px;
+                border-radius: 8px;
+
+            }
+
+        }
+    }
+
+
+ 
+
+
+
+
+
+}
