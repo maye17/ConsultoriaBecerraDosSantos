@@ -1,6 +1,6 @@
 
   .header__content-us {
-    background-image: url(../assets/Image/about.jpg);
+    background-image: url(/assets/Image/about.jpg);
     height: 70vh;
     width: 100%;
     background-attachment: fixed;
@@ -209,7 +209,7 @@
 @media (max-width:768px) { 
 
     .header__content-us {
-        background-image: url(../assets/Image/geometric.jpg);
+        background-image: url(/assets/Image/geometric.jpg);
         background-repeat : no-repeat;
         height: 30vh;
 

@@ -170,7 +170,10 @@ a {
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
-    text-shadow: 1px  0px 0px black, 0px  1px 0px black, -1px  0px 0px black, 0px -1px 0px black; }
+    text-shadow: 1px  0px 0px black,
+ 0px  1px 0px black,
+ -1px  0px 0px black,
+ 0px -1px 0px black; }
     .banner__title__text-1 {
       font-size: 65px;
       font-weight: bold;
@@ -407,7 +410,7 @@ a {
 
 @media (max-width: 768px) {
   .banner {
-    background-image: url(/assets/Image/geometric.jpg);
+    background-image: url(../assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 40vh; }
     .banner__title__text-1 {
