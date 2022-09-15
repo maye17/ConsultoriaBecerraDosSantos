@@ -29,11 +29,14 @@
 
     &__text {
         color: white !important;
+        
+        
     }
     &__content-option {
         color: rgb(255, 255, 255) !important;
         align-items: center;
         transition: all 500ms;
+        
 
         &:hover {
             border-bottom: 3px solid blue;

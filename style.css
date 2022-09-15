@@ -1,399 +1,13 @@
 
-
-
-/* Encabezado */
-
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,65,96,1) 67%, rgba(0,173,255,1) 100%);
-
-}
-
-
-.header__content {
-
-    align-items: center !important;
-
-}
-.header__text {
-    color: white !important;
-
-    
-}
-
-.header__content-logo {
-    display: inline;
-    position: relative;
-}
-
-.header__content-logo-img {
-    background-color: rgb(255, 255, 255);
-    width: 80px;
-    border-radius: 35px;
-    padding: 0.5px;
-    margin: 40px 50px 0px 10px;
-    position:relative;
-    justify-content: center;
-    align-content: center;
-    left: 30px;
-    bottom: 30px;  
-
-}
-
-
-
-.header__content-option {
-    color: rgb(255, 255, 255) !important;
-    align-items: center;
-    transition: all 500ms;
-}
-
-
-
-.header__content-option:hover {
-    border-bottom: 3px solid blue;
-    color: rgb(125, 188, 243); 
-    font-size: 15px;
-    transition: all 500ms;
-    
-}
-
-
-/* Body en home */
-
-/* Articulos */
-/* aplicando flex */
-.boxs__titles {
-    margin: 10vh 0;
-    display: grid;
-    grid-template-rows: repeat(3, 0.5fr); 
-    z-index: 0;
-
-}
-
-/* 
-.shape3 {
  
-    position: absolute;
-    right: 5.8%;
-    top: 83%;
-    z-index: -1;
-    
-}
-
-
-.shape3 img {
-    -webkit-animation: shape3 20s linear infinite;
-    animation: shape3 20s linear infinite;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: shape3;
-}
-
-
-@keyframes shape3 {
-    0% {
-
-        top: 20px;
-        transform: rotate(0deg);
-    }
-
-    50% {
-
-        top: 80px;
-        transform: rotate(360deg);
-    }
-}
- */
-/* 
-.box__title {
-    font-size: 60px;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    margin: 3px 0 30px 0;
-    z-index: 0;
-    animation-name: Boxtitle;
-    animation-duration: 1s;
-    animation-timing-function: linear;
- 
-    
-
-}
-
-
-
-@keyframes Boxtitle {
-    0% {
-        transform: translateY(100%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-
-
-
-.box__subtitle {
-    font-size: 35px;
-    font-style: italic;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin:5px 0 5px 0;
-    z-index: 0;
-    animation-name: Boxtitle;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-
-}
-
-
-
-
-
-.box__description {
-
-    font-size: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 10px 250px;
-    justify-content: center;
-    align-self: center;
-    z-index: 0;
-    animation-name: Boxtitle;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    letter-spacing: normal;
-    /* text-align: center; 
-
-
-}
-*/
-
-
-/* 
-.cards__container {
-    margin: 60px 60px;
-    padding: 0 20px;     
-
-    
-}
-
-/* aplicando grid a las tarjetas del index */
-
-/* .cards__content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 0 auto;
-}
-
-
-.card__banner {
-    background-color: rgba(51, 51, 233, 0.582);
-    display: flex;
-    padding: 20px;
-    flex-flow:column wrap;
-    justify-content: center;
-    align-items: center;
-    border-radius: 18px;
-    box-shadow: 0 25px 50px -12px rgb(0, 0, 6);
-    margin: 0;
-    width: 350px;
-    transition:all 0.5s;
-    
-} */
-
-/* Aplicando transformación */
-/* .card__banner:hover {
-   background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,66,124,1) 100%); 
-    color: white;
-    border: 2px solid white;
-    transform: scale(1.02);
-}
-
-
-
-.card__header-img {
-    justify-content: center;
-    width: 300px;
-    height: 220px;
-    padding: 30px 10px;
-    
-}
-
-
-.card__header__title {
-    flex-flow: row nowrap;
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: italic;
-
-}
-
-
-
-
-.card__header-btn{
-    color: rgb(231, 231, 250);
-    display: inline-block;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    border: 3px black solid;
-    border-radius: 20px;
-    border-color: azure;
-    background:  rgb(3, 3, 49);
-    font-size: 18px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-
-}
-
-.card__header-btn:hover {
-    
-    color: rgb(24, 24, 148);
-    background:white;
-    border-color: rgb(24, 24, 148);
-    
-}  */
-
-/* Estilo de pie de página */
- /* Pie de página */
-/*   .footer {
-    background-color: rgba(3, 3, 49, 0.763);
-
- 
-  }
-
-  .footer__text {
-      color: rgb(255, 255, 255);
-      font-size: 15px;
-      display: flex;
-      justify-content: center;
-      font-family: 'Open Sans', sans-serif;
-  }
-
-  .footer__text a {
-      text-decoration: none;
-      font-size: 15px;
-      color:rgb(255, 255, 255);
-      display: flex;
-      flex-flow: row nowrap;
-      font-family: 'Open Sans', sans-serif;
-     
-  } 
-
-  .footer__content-redes {
-      display: flex;
-      flex-direction: row;
-    
-    
-
-
-}
-.footer__content-red-fac {
-    color: rgb(250, 250, 250);
-    justify-content: center;
-    align-self: flex-start;
-    padding: 5px;
-    margin: 30px 5px 15px 55px;
-
-    
-}
-
-
-.footer__content-red-color {
-
-    background-color: rgba(136, 136, 223, 0.316);
-    border-radius: 25px;  
-    border: 2px solid rgb(1, 208, 255);
-    transition: all 600ms;
-
-}
-
-
-.footer__content-red-color:hover {
-    background-image: radial-gradient(circle, #0b0b51, #1f1272, #351893, #4e1cb6, #6a1ed8);
-    border:2px solid #61006E;
-    transform: scale(1.3);
-
-}
-
-.footer__content-red-tw {
-    color: rgb(250, 250, 250);
-    display:flex;
-    justify-content: center;
-    align-self: flex-end;
-    padding: 5px;
-    margin: 30px 5px 15px 5px;
-
-}
-
-.footer__content-red-ins {
-    color: rgb(250, 250, 250);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-self: center;
-    padding: 5px;
-    margin: 30px 15px 15px 5px;
-
-}
-
-.text-color  {
-    color: white;
-}
- */
   /* Estilo de nosotros */
    /* aplicando grid */
 
 
-  .header__content-us {
-      background-image: url(../assets/Image/about.jpg);
-      height: 70vh;
-      width: 100%;
-      background-attachment: fixed;
-      background-size: cover;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;  
-      opacity: 0.85; 
-      
-  }
+ 
 
 
-.header__content-us-title {
-    font-size: 70px;
-    color: black;
-}
-
-.header__content-us-subtitle {
-    color:black;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: bold;
-   padding-top: 40px;
-}
-
-
-
-.box__content-us {
+/* .box__content-us {
 
     padding: 0 20px;  
     margin: 60px auto;  
@@ -421,7 +35,7 @@
     flex-flow:column nowrap;
     justify-content: space-between;
     align-items: flex-start; */
-    background-image: radial-gradient(circle, #11052f, #110835, #100b3b, #100d42, #100e48);
+ /*    background-image: radial-gradient(circle, #11052f, #110835, #100b3b, #100d42, #100e48);
     color: white;
     animation-name: MisionMov;
     animation-duration: 1s ;
@@ -511,22 +125,14 @@
         top: 80px;
         transform: translateY(5%);
     }
+} */ 
+
+
+.box__conternt-us h2 {
+    font-size: 70px;
+    position: relative;
+    top: 70vh;
 }
-
-.box__content__info {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.box__content__info  h2 {
-    font-size: 50px;
-    margin-bottom: 30px;
-    border-bottom: 6px solid black;
-}
-
-
 
 
 
@@ -1152,40 +758,11 @@ padding-bottom: 2px;
 }
 
 
+
 /* Media Queries para todo el proyecto */
 
 @media (max-width:1250px) {
 
-    /* Responsive Index */
-/*     .header__content-option {
-        font-size: 20px;
-    }
-
-    .header__content-option:hover {
-        font-size: 22px;
-    }
-
-    .banner__title__text-2 {
-        font-size: 50px;
-        margin-bottom: 30px;
-    }
-
-    
-
-    .cards__content {
-        grid-template-columns:  repeat(2, 1fr);
-        max-width: 80%;
-        justify-items: center;
-        }
-    
-        .card__banner {
-        width: 300px;      
-        margin-bottom: 30px;
-        }
-
-    .card__header-img {
-        width: 230px;
-    }     */
 
    /* Responsive de servicios */
 
@@ -1324,102 +901,6 @@ padding-bottom: 2px;
 
 /* Responsive para nosotros */
 
-.header__content-us {
-    background-image: url(../assets/Image/geometric.jpg);
-    background-repeat : no-repeat;
-    height: 40vh;
-    
-}
-
-.header__content-us-title {
- 
-    color: white;
-}
-
-
-
-.header__content-us-subtitle {
-    color: white;
-}
-
-.box__content-us {
-
-    grid-template-columns: 1fr;
-    margin: 10px auto;
-    
-}   
-
-.box__content-parent {
-  
-    flex-flow: column wrap;
-    animation-name: MisionMov;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-}
-
-@keyframes MisionMov {
-    0% {
-
-        top: 20px;
-        transform:translateX(10%);
-    }
-
-    100% {
-
-        top: 80px;
-        transform:translateX(5%) 
-    }
-}
-
-.box__content-img {
-    max-width: 80%;
-    max-height: 80%;
-    animation-name: ImgMov;
-    animation-duration: 1s;
-    animation-timing-function: linea;
-}
-
-
-@keyframes ImgMov {
-
-    0% {
-        top: 20px;
-        transform: translateX(-10%);
-    }
-    
-    100% {
-        top: 80px;
-        transform: translateX(5%);
-    }
-}
-
-.box__content__info h2 {
-    font-size: 35px;
-}
-
-.box__content-video {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-    .box__content-video iframe {
-        max-width: 75%;
-        height: 300px ;
-        
-    }
-
-    .shape3 {
-        display: none;
-    }
-
-    .shape3 img {
-        display: none;
-    }
-
-    .box__image {
-        display: none;
-    }
     /* Responsive para servicios */
 
 
@@ -1636,50 +1117,7 @@ padding-bottom: 2px;
 
     /* Responsive para nosotros */
 
-.header__content-us {
-    background-image: url(../assets/Image/geometric.jpg);
-    background-repeat : no-repeat;
-    height: 30vh;
-    
-}
-
-.header__content-us-title {
- 
-    color: white;
-    font-size: 35px;
-}
-
-
-
-.header__content-us-subtitle {
-    color: white;
-    font-size: 20px;
-}
-
-.box__content-us {
-
-    grid-template-columns: 1fr;
-    
-}   
-
-.box__content-parent {
-  
-    flex-flow: column wrap;
-}
-
-.box__content-title {
-    font-size: 20px;
-}
-.box__content-subtitle {
-    font-size: 20px;
-}
-.box__content__des-title {
-    font-size: 15px;
-}
-.ytp-cued-thumbnail-overlay-image {
-    max-width: 50%;
-}
-
+.
 /* Responsive servicios a 811px */
 .box__content__service-head{
     background-image: url(../assets/Image/geometric.jpg);
