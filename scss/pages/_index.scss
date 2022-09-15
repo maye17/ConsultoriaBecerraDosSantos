@@ -520,16 +520,24 @@
 
 @media  (max-width:576px) {
 
+    .banner {
 
-    .banner__title__text-1 {
+        background-image: url(/assets/Image/geometric.jpg);
+        background-repeat : no-repeat;
+        height: 40vh;
+
+        &__text-1 {
         margin: 3px;
         padding: 0;
         font-size: 16px;
-    }
-    .banner__title__text-2 {
+        }
+    
+        &__text-2 {
+     
         font-size: 15px;
         margin: 15px 3px;
-    }    
+        }  
+    }  
 
     .boxs__titles {
         margin: 20px auto;
