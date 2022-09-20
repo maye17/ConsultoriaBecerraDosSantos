@@ -86,7 +86,7 @@
 
 
     &-img { 
-        height: 80vh;
+        
         animation-name: ImgMov;
         animation-duration: 1s;
         animation-timing-function: linear;
@@ -126,6 +126,35 @@
 
 
 //Medias Queries
+
+@media (max-width:1200px) {
+
+    .box__content__aside img {
+        
+        animation-name: ImgMov;
+        animation-duration: 1s;
+        animation-timing-function: linea;
+        max-width: 90%;
+        max-height: 70%;
+    }
+    
+    
+    @keyframes ImgMov {
+    
+        0% {
+            top: 20px;
+            transform: translateX(-10%);
+        }
+        
+        100% {
+            top: 80px;
+            transform: translateX(5%);
+        }
+    }
+    
+
+}
+
 
 @media (max-width:992px) { 
     .header__content-us {
@@ -171,6 +200,8 @@
         animation-name: ImgMov;
         animation-duration: 1s;
         animation-timing-function: linea;
+        max-width: 90%;
+        max-height: 70%;
     }
     
     
@@ -238,13 +269,13 @@
           
 
             h3 {
-                font-size: 20px;
-                margin: 0;
+                font-size: 23px;
+                margin: 10px;
             }
 
             p {
-                font-size: 20px;
-                margin: 0;
+                font-size: 18px;
+                margin: 10px;
 
             }
         } 

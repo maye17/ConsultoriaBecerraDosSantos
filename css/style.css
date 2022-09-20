@@ -102,23 +102,23 @@ a {
     color: #fafafa;
     justify-content: center;
     align-self: flex-start;
-    padding: 5px;
-    margin: 30px 5px 15px 55px; }
+    /*         padding: 5px;
+        margin: 30px 5px 15px 55px; */ }
   .footer__content-red-tw {
     color: #fafafa;
     display: flex;
     justify-content: center;
     align-self: flex-end;
-    padding: 5px;
-    margin: 30px 5px 15px 5px; }
+    /*         padding: 5px;
+        margin: 30px 5px 15px 5px; */ }
   .footer__content-red-ins {
     color: #fafafa;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    /*         display: flex;
+        flex-flow: row wrap;
+        justify-content: center; */
     align-self: center;
-    padding: 5px;
-    margin: 30px 15px 15px 5px; }
+    /*         padding: 5px;
+        margin: 30px 15px 15px 5px; */ }
 
 .text-color {
   color: white; }
@@ -150,30 +150,33 @@ a {
     .footer__content-red-color:hover {
       max-width: 70%; } }
 
+.flexi, .footer__content-red-ins, .banner, .banner__title, .boxs__titles-title, .boxs__titles-description {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.feet__red, .footer__content-red-fac, .footer__content-red-tw, .footer__content-red-ins {
+  padding: 5px;
+  margin: 30px 15px 15px 5px; }
+
 .banner {
   background-color: #e7e7fa;
-  background-image: url(../assets/Image/duo_project_2.jpg);
+  background-image: url(/assets/Image/duo_project_2.jpg);
   height: 70vh;
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   align-items: center;
   opacity: 0.85; }
   .banner__title {
     color: white;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    /*         display: flex;
+        flex-flow: row wrap;
+        justify-content: center; */
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
-    text-shadow: 1px  0px 0px black,
- 0px  1px 0px black,
- -1px  0px 0px black,
- 0px -1px 0px black; }
+    text-shadow: 1px  0px 0px black, 0px  1px 0px black, -1px  0px 0px black, 0px -1px 0px black; }
     .banner__title__text-1 {
       font-size: 65px;
       font-weight: bold;
@@ -263,9 +266,9 @@ a {
   .boxs__titles-title {
     font-size: 35px;
     font-style: italic;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    /*         display: flex;
+        flex-flow: row nowrap;
+        justify-content: center; */
     margin: 5px 0 5px 0;
     z-index: 0;
     animation-name: Boxtitle;
@@ -273,10 +276,10 @@ a {
     animation-timing-function: linear; }
   .boxs__titles-description {
     font-size: 20px;
-    display: flex;
-    flex-flow: row wrap;
+    /*         display: flex;
+        flex-flow: row wrap;
+        justify-content: center; */
     margin: 10px 50px;
-    justify-content: center;
     text-align: justify;
     z-index: 0;
     animation-name: Boxtitle;
@@ -448,7 +451,7 @@ ul {
 
 @media (max-width: 992px) {
   .banner {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     height: 40vh; }
     .banner__title__text-1 {
       font-size: 50px;
@@ -461,7 +464,6 @@ ul {
     margin: 20px auto; }
     .boxs__titles__titles-subtitle {
       font-size: 25px;
-      margin: 0 auto;
       margin: 20px auto; }
     .boxs__titles__titles-title {
       grid-template-rows: repeat(2, 1fr);
@@ -487,7 +489,7 @@ ul {
 
 @media (max-width: 768px) {
   .banner {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 40vh; }
     .banner__title__text-1 {
@@ -530,7 +532,7 @@ ul {
 
 @media (max-width: 576px) {
   .banner {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 40vh; }
     .banner__text-1 {
@@ -581,7 +583,7 @@ ul {
         border-radius: 8px; } }
 
 .header__content-us {
-  background-image: url(../assets/Image/about.jpg);
+  background-image: url(/assets/Image/about.jpg);
   height: 70vh;
   width: 100%;
   background-attachment: fixed;
@@ -642,7 +644,6 @@ ul {
   flex-flow: row wrap;
   margin-top: 10px; }
   .box__content__aside-img {
-    height: 80vh;
     animation-name: ImgMov;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -664,9 +665,24 @@ ul {
     top: 80px;
     transform: translateY(5%); } }
 
+@media (max-width: 1200px) {
+  .box__content__aside img {
+    animation-name: ImgMov;
+    animation-duration: 1s;
+    animation-timing-function: linea;
+    max-width: 90%;
+    max-height: 70%; }
+  @keyframes ImgMov {
+    0% {
+      top: 20px;
+      transform: translateX(-10%); }
+    100% {
+      top: 80px;
+      transform: translateX(5%); } } }
+
 @media (max-width: 992px) {
   .header__content-us {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 40vh;
     grid-template-columns: 1fr; }
@@ -689,7 +705,9 @@ ul {
   .box__content__aside-img {
     animation-name: ImgMov;
     animation-duration: 1s;
-    animation-timing-function: linea; }
+    animation-timing-function: linea;
+    max-width: 90%;
+    max-height: 70%; }
   @keyframes ImgMov {
     0% {
       top: 20px;
@@ -709,7 +727,7 @@ ul {
 
 @media (max-width: 768px) {
   .header__content-us {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 30vh; }
     .header__content-us h2 {
@@ -723,16 +741,16 @@ ul {
     .box__content__us-parent {
       display: block; }
       .box__content__us-parent h3 {
-        font-size: 20px;
-        margin: 0; }
+        font-size: 23px;
+        margin: 10px; }
       .box__content__us-parent p {
-        font-size: 20px;
-        margin: 0; }
+        font-size: 18px;
+        margin: 10px; }
   .ytp-cued-thumbnail-overlay-image {
     max-width: 50%; } }
 
 .box__content__service-head {
-  background-image: url(../assets/Image/bussinesman.jpg);
+  background-image: url(/assets/Image/bussinesman.jpg);
   height: 60vh;
   width: 100%;
   background-size: cover;
@@ -883,7 +901,7 @@ ul {
 
 @media (max-width: 992px) {
   .box__content__service-head {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 40vh; }
     .box__content__service-head h2 {
@@ -919,7 +937,7 @@ ul {
 
 @media (max-width: 768px) {
   .box__content__service-head {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 30vh; }
     .box__content__service-head h2 {

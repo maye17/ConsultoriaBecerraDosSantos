@@ -8,17 +8,19 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat : no-repeat;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    @extend .flexi;
+    //display: flex;
+    //flex-flow: row wrap;
+    //justify-content: center; 
     align-items: center;
     opacity: 0.85; 
       
     &__title {
         color: white;
-        display: flex;
+/*         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: center; */
+        @extend .flexi;
         font-family: 'Nunito Sans', sans-serif;
         font-style: normal;    
         text-shadow: 1px  0px 0px black,
@@ -160,9 +162,10 @@
 
         font-size: 35px;
         font-style: italic;
-        display: flex;
+/*         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: center; */
+        @extend .flexi;
         margin:5px 0 5px 0;
         z-index: 0;
         animation-name: Boxtitle;
@@ -172,10 +175,11 @@
 
     &-description {
         font-size: 20px;
-        display: flex;
+/*         display: flex;
         flex-flow: row wrap;
+        justify-content: center; */
+        @extend .flexi;
         margin: 10px 50px;
-        justify-content: center;
         text-align:justify;
         z-index: 0;
         animation-name: Boxtitle;
@@ -523,7 +527,6 @@ ul {
         &__titles-subtitle {
 
            font-size: 25px;
-           margin: 0 auto;
            margin: 20px auto;
         }
 
