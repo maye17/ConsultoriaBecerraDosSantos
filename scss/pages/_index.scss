@@ -310,17 +310,148 @@
     }
 }
 
-.box__find__linea {
-   
-    padding: 10px;
-    text-align: justify;
-    justify-content: flex-end;
-    
+ul {
+    list-style: none;
 
-    &-icon {
-        margin: 11.2px;
-        margin-left: 30px;
+    li {
+        margin: 10px;
+        text-align: right;
+
+
+        .box__icon-st {
+            margin-bottom: 15px;
+            align-items: left;
+ 
+    
+            &::before {
+                font-family:"Font Awesome 5 Free";
+                content:"\f0eb";
+                margin-right:15px;
+               text-align: left;
+                
+            }
+        }
+    
+        
+        .box__icon-nd {
+    
+            margin-bottom: 15px;
+            align-items: left;
+
+    
+            &::before {
+                font-family:"Font Awesome 5 Free";
+                content:"\f1d8";
+                margin-right:15px;
+                text-align:left;
+                
+            }
+    
+        }
+    
+       
+        
+        .box__icon-rd {
+            margin-bottom: 15px;
+    
+            &::before {
+            font-family:"Font Awesome 5 Free";
+            content:"\f14a";
+            margin-right:17.8px;
+            text-align:left;
+            
+            
+            }
+        }
+        
+        .box__icon-four{
+    
+            margin-bottom: 15px;
+
+            
+            &::before {
+                font-family:"Font Awesome 5 Free";
+                content:"\f59a";
+                margin-right:15px;
+                text-align:left;
+                
+            }
+        
+        }
+    
+        
+        .box__icon-five {
+    
+            margin-bottom: 15px;
+    
+            &::before {
+                font-family:"Font Awesome 5 Free";
+                content:"\f252";
+                margin-right:15px;
+                text-align:left;
+                align-items: left;
+                
+            }
+        }    
+    
+        .box__icon-six {
+        
+            margin-bottom: 15px;
+
+            &::before {
+                font-family:"Font Awesome 5 Free";
+                content:"\2a";
+                margin-right:15px;
+                text-align:left;
+
+            }
+        }    
+
+
+        .box__icon-seven {
+        
+            margin-bottom: 15px;
+
+            &::before {
+                font-family:"Font Awesome 5 Free";
+                content:"\f2bd";    
+                margin-right:15px;
+                
+
+            }
+        }
+        
+        
+        .box__icon-eight {
+            
+            margin-bottom: 15px;
+
+            &::before {
+            font-family:"Font Awesome 5 Free";
+            content:"\f080";    
+            margin-right:15px;
+            
+
+            }
+            
+        }
+    
+        .box__icon-nine{
+        
+            margin-bottom: 15px;
+
+            &::before {
+                font-family:"Font Awesome 5 Free";
+                content:"\f5c0";    
+                margin-right:15px;
+                
+
+            }
+        }
     }
+
+    
+    
 }
 
 /* Media Queries para todo el proyecto */

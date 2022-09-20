@@ -152,7 +152,7 @@ a {
 
 .banner {
   background-color: #e7e7fa;
-  background-image: url(/assets/Image/duo_project_2.jpg);
+  background-image: url(../assets/Image/duo_project_2.jpg);
   height: 70vh;
   width: 100%;
   background-attachment: fixed;
@@ -170,7 +170,10 @@ a {
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
-    text-shadow: 1px  0px 0px black, 0px  1px 0px black, -1px  0px 0px black, 0px -1px 0px black; }
+    text-shadow: 1px  0px 0px black,
+ 0px  1px 0px black,
+ -1px  0px 0px black,
+ 0px -1px 0px black; }
     .banner__title__text-1 {
       font-size: 65px;
       font-weight: bold;
@@ -358,13 +361,74 @@ a {
     height: 200px;
     justify-content: flex-start; }
 
-.box__find__linea {
-  padding: 10px;
-  text-align: justify;
-  justify-content: flex-end; }
-  .box__find__linea-icon {
-    margin: 11.2px;
-    margin-left: 30px; }
+ul {
+  list-style: none; }
+  ul li {
+    margin: 10px;
+    text-align: right; }
+    ul li .box__icon-st {
+      margin-bottom: 15px;
+      align-items: left; }
+      ul li .box__icon-st::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0eb";
+        margin-right: 15px;
+        text-align: left; }
+    ul li .box__icon-nd {
+      margin-bottom: 15px;
+      align-items: left; }
+      ul li .box__icon-nd::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f1d8";
+        margin-right: 15px;
+        text-align: left; }
+    ul li .box__icon-rd {
+      margin-bottom: 15px; }
+      ul li .box__icon-rd::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f14a";
+        margin-right: 17.8px;
+        text-align: left; }
+    ul li .box__icon-four {
+      margin-bottom: 15px; }
+      ul li .box__icon-four::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f59a";
+        margin-right: 15px;
+        text-align: left; }
+    ul li .box__icon-five {
+      margin-bottom: 15px; }
+      ul li .box__icon-five::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f252";
+        margin-right: 15px;
+        text-align: left;
+        align-items: left; }
+    ul li .box__icon-six {
+      margin-bottom: 15px; }
+      ul li .box__icon-six::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\2a";
+        margin-right: 15px;
+        text-align: left; }
+    ul li .box__icon-seven {
+      margin-bottom: 15px; }
+      ul li .box__icon-seven::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f2bd";
+        margin-right: 15px; }
+    ul li .box__icon-eight {
+      margin-bottom: 15px; }
+      ul li .box__icon-eight::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f080";
+        margin-right: 15px; }
+    ul li .box__icon-nine {
+      margin-bottom: 15px; }
+      ul li .box__icon-nine::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f5c0";
+        margin-right: 15px; }
 
 /* Media Queries para todo el proyecto */
 @media (max-width: 1200px) {
@@ -384,7 +448,7 @@ a {
 
 @media (max-width: 992px) {
   .banner {
-    background-image: url(/assets/Image/geometric.jpg);
+    background-image: url(../assets/Image/geometric.jpg);
     height: 40vh; }
     .banner__title__text-1 {
       font-size: 50px;
@@ -423,7 +487,7 @@ a {
 
 @media (max-width: 768px) {
   .banner {
-    background-image: url(/assets/Image/geometric.jpg);
+    background-image: url(../assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 40vh; }
     .banner__title__text-1 {
@@ -466,7 +530,7 @@ a {
 
 @media (max-width: 576px) {
   .banner {
-    background-image: url(/assets/Image/geometric.jpg);
+    background-image: url(../assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 40vh; }
     .banner__text-1 {
@@ -517,7 +581,7 @@ a {
         border-radius: 8px; } }
 
 .header__content-us {
-  background-image: url(/assets/Image/about.jpg);
+  background-image: url(../assets/Image/about.jpg);
   height: 70vh;
   width: 100%;
   background-attachment: fixed;
@@ -645,7 +709,7 @@ a {
 
 @media (max-width: 768px) {
   .header__content-us {
-    background-image: url(/assets/Image/geometric.jpg);
+    background-image: url(../assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 30vh; }
     .header__content-us h2 {
@@ -880,8 +944,6 @@ a {
       .box__content__service__articles-ar {
         width: 300px;
         margin: 15px auto; }
-        .box__content__service__articles-ar:hover {
-          background-color: red; }
         .box__content__service__articles-ar h2 {
           font-size: 20px; }
         .box__content__service__articles-ar h3 {
