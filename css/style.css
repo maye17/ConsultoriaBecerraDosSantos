@@ -152,7 +152,7 @@ a {
 
 .banner {
   background-color: #e7e7fa;
-  background-image: url(../assets/Image/duo_project_2.jpg);
+  background-image: url(/assets/Image/duo_project_2.jpg);
   height: 70vh;
   width: 100%;
   background-attachment: fixed;
@@ -170,10 +170,7 @@ a {
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
-    text-shadow: 1px  0px 0px black,
- 0px  1px 0px black,
- -1px  0px 0px black,
- 0px -1px 0px black; }
+    text-shadow: 1px  0px 0px black, 0px  1px 0px black, -1px  0px 0px black, 0px -1px 0px black; }
     .banner__title__text-1 {
       font-size: 65px;
       font-weight: bold;
@@ -351,26 +348,43 @@ a {
           background: white;
           border-color: #181894; }
 
+.box__find-one {
+  display: flex;
+  margin: 10px;
+  padding: 5px; }
+  .box__find-one img {
+    text-align: left;
+    width: 300px;
+    height: 200px;
+    justify-content: flex-start; }
+
+.box__find__linea {
+  padding: 10px;
+  text-align: justify;
+  justify-content: flex-end; }
+  .box__find__linea-icon {
+    margin: 11.2px;
+    margin-left: 30px; }
+
 /* Media Queries para todo el proyecto */
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   .banner__title__text-2 {
     font-size: 50px;
     margin-bottom: 30px; }
   .cards__container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 80%;
     justify-items: center; }
     .cards__container-banner {
-      width: 300px;
+      width: 420px;
       margin-bottom: 30px; }
       .cards__container-banner img {
-        width: 230px; }
+        width: 330px; }
       .cards__container-banner p {
         padding: 22px; } }
 
 @media (max-width: 992px) {
   .banner {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     height: 40vh; }
     .banner__title__text-1 {
       font-size: 50px;
@@ -397,11 +411,10 @@ a {
     margin: 5px; }
     .cards__container {
       grid-template-columns: repeat(2, 1fr);
-      max-width: 80%;
       justify-items: center;
       gap: 30px; }
       .cards__container-banner {
-        width: 320px;
+        width: 400px;
         margin-bottom: 30px; }
         .cards__container-banner img {
           width: 240px; }
@@ -410,7 +423,7 @@ a {
 
 @media (max-width: 768px) {
   .banner {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 40vh; }
     .banner__title__text-1 {
@@ -437,7 +450,7 @@ a {
     margin: 0; }
     .cards__container {
       grid-template-columns: repeat(1, 1fr);
-      max-width: 50%;
+      width: 400px;
       justify-content: center;
       gap: 5px; }
       .cards__container-banner {
@@ -452,13 +465,17 @@ a {
         display: none; } }
 
 @media (max-width: 576px) {
-  .banner__title__text-1 {
-    margin: 3px;
-    padding: 0;
-    font-size: 16px; }
-  .banner__title__text-2 {
-    font-size: 15px;
-    margin: 15px 3px; }
+  .banner {
+    background-image: url(/assets/Image/geometric.jpg);
+    background-repeat: no-repeat;
+    height: 40vh; }
+    .banner__text-1 {
+      margin: 3px;
+      padding: 0;
+      font-size: 16px; }
+    .banner__text-2 {
+      font-size: 15px;
+      margin: 15px 3px; }
   .boxs__titles {
     margin: 20px auto; }
     .boxs__titles-title {
@@ -481,14 +498,13 @@ a {
     margin: 0 auto;
     gap: auto; }
     .cards__container-banner {
-      max-width: 80%;
-      max-height: 100%;
+      width: 350px;
       margin-bottom: 20px;
       padding: 0 auto;
       display: flex;
       flex-flow: row wrap; }
       .cards__container-banner img {
-        width: 260px;
+        width: 300px;
         height: 200px;
         padding: 0 auto; }
       .cards__container-banner h2 {
@@ -501,7 +517,7 @@ a {
         border-radius: 8px; } }
 
 .header__content-us {
-  background-image: url(../assets/Image/about.jpg);
+  background-image: url(/assets/Image/about.jpg);
   height: 70vh;
   width: 100%;
   background-attachment: fixed;
@@ -629,7 +645,7 @@ a {
 
 @media (max-width: 768px) {
   .header__content-us {
-    background-image: url(../assets/Image/geometric.jpg);
+    background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
     height: 30vh; }
     .header__content-us h2 {
@@ -650,3 +666,285 @@ a {
         margin: 0; }
   .ytp-cued-thumbnail-overlay-image {
     max-width: 50%; } }
+
+.box__content__service-head {
+  background-image: url(../assets/Image/bussinesman.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: inline-block;
+  position: relative; }
+  .box__content__service-head h2 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 60px; }
+  .box__content__service-head h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    padding: 5px; }
+
+.box__content__service-title {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .box__content__service-title h2 {
+    font-size: 50px;
+    font-weight: bold; }
+  .box__content__service-title p {
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 50px;
+    justify-content: center;
+    text-align: justify;
+    z-index: 0;
+    animation-name: Boxtitle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    letter-spacing: normal; }
+
+.box__content__service {
+  margin: 60px 60px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center; }
+  .box__content__service__articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin: 0px;
+    justify-content: center;
+    align-content: center;
+    max-width: 1200px; }
+    .box__content__service__articles-ar {
+      background-image: radial-gradient(circle, #20367c, #1c3990, #1a3ba5, #1d3cb9, #253ccd);
+      color: white;
+      padding: 20px;
+      width: 380px;
+      height: 400px;
+      margin-top: 10px;
+      border-radius: 18px;
+      box-shadow: 0 25px 50px -12px #000006;
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.5s; }
+      .box__content__service__articles-ar:hover {
+        background-image: radial-gradient(circle, #050c2f, #121137, #22123f, #321144, #430e48);
+        border: 3px solid white; }
+        .box__content__service__articles-ar:hover img {
+          transform: translateY(-80px); }
+        .box__content__service__articles-ar:hover h3 {
+          transform: translateY(-80px); }
+        .box__content__service__articles-ar:hover p {
+          transform: translateY(-70px);
+          opacity: 1;
+          padding: 12px; }
+      .box__content__service__articles-ar img {
+        width: 150px;
+        height: 150px;
+        border-radius: 74px;
+        background-color: aliceblue;
+        justify-content: center;
+        margin-bottom: 15px;
+        transition: all 400ms; }
+      .box__content__service__articles-ar h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 10px;
+        margin-left: 20px;
+        transition: all 500ms; }
+      .box__content__service__articles-ar-p {
+        width: 100%;
+        height: 150px;
+        border-radius: 0px 0px 18px 18px; }
+        .box__content__service__articles-ar-p p {
+          margin-top: 15px;
+          font-size: 15px;
+          text-align: justify;
+          color: white;
+          opacity: 0;
+          transform: translateY(150px);
+          transition: all 600ms; }
+
+.box__boton__service {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .box__boton__service-presu {
+    border-radius: 15px;
+    height: 50px;
+    width: 600px;
+    background-image: linear-gradient(to bottom, #1749e8, #183bc5, #152da4, #0f2084, #071465);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px; }
+    .box__boton__service-presu:hover {
+      color: blue;
+      background-image: linear-gradient(to bottom, #fbfbfb, #efeef9, #e1e1f8, #d2d5f6, #c2c9f5);
+      border: 2px solid blue;
+      font-weight: bold; }
+
+@media (max-width: 1250px) {
+  /* Responsive de servicios */
+  .box__content__service-head {
+    margin: auto; }
+    .box__content__service-head h2 {
+      color: black;
+      font-size: 60px;
+      text-align: center; }
+    .box__content__service-head h3 {
+      color: white;
+      background-color: rgba(3, 3, 49, 0.653);
+      margin: 0 200px;
+      text-align: center; }
+  .box__content__service {
+    margin: 60px 1px; }
+    .box__content__service__articles {
+      grid-template-columns: repeat(2, 1fr);
+      align-content: center; }
+      .box__content__service__articles-ar {
+        margin: 5px;
+        padding: 3px; }
+        .box__content__service__articles-ar p {
+          padding: 10px; } }
+
+@media (max-width: 992px) {
+  .box__content__service-head {
+    background-image: url(../assets/Image/geometric.jpg);
+    background-repeat: no-repeat;
+    height: 40vh; }
+    .box__content__service-head h2 {
+      margin-top: 10vh;
+      font-size: 60px;
+      text-align: center;
+      color: white; }
+    .box__content__service-head h3 {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      margin-top: 5vh; }
+  .box__content__service {
+    margin: 0 auto; }
+    .box__content__service__articles {
+      grid-template-rows: repeat(2, 1fr);
+      align-content: center;
+      margin: 0 auto; }
+      .box__content__service__articles-ar {
+        margin-bottom: 30px;
+        width: 350px; }
+        .box__content__service__articles-ar p {
+          padding: 10px; }
+  .box__content__service-title {
+    font-size: 50px;
+    margin-top: 5vh;
+    margin-bottom: 90px; }
+  .box__boton_service {
+    margin-bottom: 30px; }
+    .box__boton_service-presu {
+      max-width: 60%;
+      font-size: 25px; } }
+
+@media (max-width: 768px) {
+  .box__content__service-head {
+    background-image: url(../assets/Image/geometric.jpg);
+    background-repeat: no-repeat;
+    height: 30vh; }
+    .box__content__service-head h2 {
+      font-size: 35px;
+      color: white;
+      text-align: center; }
+    .box__content__service-head h3 {
+      font-size: 20px;
+      color: white;
+      margin: 0 200px; }
+  .box__content__service-title {
+    margin: 20px auto; }
+    .box__content__service-title p {
+      font-size: 16px; }
+  .box__content__service {
+    margin: 10px auto;
+    padding: 0; }
+    .box__content__service__articles {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 50%;
+      justify-content: center; }
+      .box__content__service__articles-ar {
+        width: 300px;
+        margin: 15px auto; }
+        .box__content__service__articles-ar:hover {
+          background-color: red; }
+        .box__content__service__articles-ar h2 {
+          font-size: 20px; }
+        .box__content__service__articles-ar h3 {
+          font-size: 16px; }
+        .box__content__service__articles-ar p {
+          font-size: 15px; }
+    .box__content__service .box__boton_service {
+      margin-bottom: 30px;
+      margin-top: 20px; }
+      .box__content__service .box__boton_service-presu {
+        max-width: 20%;
+        font-size: 20px; } }
+
+@media (max-width: 576px) {
+  .box__content__service-head {
+    margin: auto; }
+    .box__content__service-head h3 {
+      font-size: 18px;
+      color: white;
+      margin: 0 50px; }
+  .box__content__service-title {
+    text-align: center; }
+    .box__content__service-title h2 {
+      font-size: 30px; }
+    .box__content__service-title h3 {
+      font-size: 27px;
+      margin: auto; }
+    .box__content__service-title p {
+      font-size: 15px;
+      margin-bottom: 35px; }
+  .box__content__service {
+    margin: 0 auto;
+    align-content: center; }
+    .box__content__service__articles {
+      margin: 0 auto;
+      align-content: center;
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+      min-width: 50%; }
+      .box__content__service__articles-ar {
+        width: 280px;
+        max-height: 80%;
+        margin: 10px 0;
+        padding: 0 auto; }
+        .box__content__service__articles-ar img {
+          width: 100px;
+          height: 100px; }
+        .box__content__service__articles-ar h3 {
+          font-size: 15px; }
+        .box__content__service__articles-ar-p {
+          font-size: 12px;
+          padding: auto;
+          flex-direction: row; }
+  .box__boton__service {
+    width: 300px;
+    margin: 5px auto; }
+    .box__boton__service-presu {
+      font-size: 16px;
+      width: 100%;
+      max-width: 80%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap; } }

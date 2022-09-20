@@ -408,7 +408,7 @@
 
 /* Estilos de Página Servicios */
 
-.box__content__service {
+/* .box__content__service {
     display: flex;
     width: 100%;
     margin-top: 1px;
@@ -427,9 +427,9 @@
     background-attachment: fixed;
     display: inline-block;
     position:relative;
-}
+} */
 
-.box__content__service-head h2 {
+/* .box__content__service-head h2 {
     font-size: 70px;
     font-weight: bold;
     margin-top: 50px;
@@ -443,15 +443,15 @@
     margin-bottom: 10px;
     margin-left: 60px;
     padding: 5px;
-}
-.box__content__service-title {
+} */
+/* .box__content__service-title {
     font-size: 50px;
     margin-top: 30px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-
+ */
 .explorer {
     position: relative;
     top: 20px;
@@ -465,7 +465,7 @@
     z-index: -1;
 }
 
-.box__content__service-all {
+/* .box__content__service-all {
     margin: 60px 60px;
     padding: 0 20px;   
 }
@@ -532,25 +532,25 @@
     transform: translateY(150px);
     transition: all 600ms;
 }
-
+ */
 /* Efecto hover */
 
-.box__content__service-article:hover {
+/* .box__content__service-article:hover {
     background-image: radial-gradient(circle, #050c2f, #121137, #22123f, #321144, #430e48);
     border: 3px solid white;
-}
+} */
 
-.box__content__service-article:hover img {
+/* .box__content__service-article:hover img {
     transform: translateY(-80px);
     
-}
+} */
 
 
-.box__content__service-article:hover h3 {
+/* .box__content__service-article:hover h3 {
     transform: translateY(-80px);
 }
-
-.box__content__service-article .service__article-p {
+ */
+/* .box__content__service-article .service__article-p {
     width: 100%;
     height: 150px;
     border-radius: 0px 0px 18px 18px;
@@ -562,7 +562,7 @@
     transform: translateY(-70px);
     opacity: 1;
     
-}
+} */
 
 .box__boton_service {
     display: flex;
@@ -766,7 +766,7 @@ padding-bottom: 2px;
 
    /* Responsive de servicios */
 
-    .box__content__service-all {
+  /*   .box__content__service-all {
             margin: 60px 0;
 
     }  
@@ -800,7 +800,7 @@ padding-bottom: 2px;
 
     .box__content__service-article {
         margin:10px;
-    }
+    } */
     
      /* Responsive para planes */
 
@@ -903,7 +903,7 @@ padding-bottom: 2px;
 
     /* Responsive para servicios */
 
-
+/* 
     .box__content__service-head{
         background-image: url(../assets/Image/geometric.jpg);
         background-repeat : no-repeat;
@@ -972,7 +972,7 @@ padding-bottom: 2px;
         max-width: 60%;
         font-size: 25px;
     }
-   
+    */
 
         /* Responsive para contacto */
 
@@ -1119,7 +1119,7 @@ padding-bottom: 2px;
 
 
 /* Responsive servicios a 811px */
-.box__content__service-head{
+/* .box__content__service-head{
     background-image: url(../assets/Image/geometric.jpg);
     background-repeat : no-repeat;
     height: 30vh;
@@ -1172,7 +1172,7 @@ padding: 0;
     max-width: 60%;
     font-size: 25px;
 }
-
+ */
 
 
     /* responsive para contactos */
@@ -1382,7 +1382,7 @@ padding: 0;
     /* servicios */
 
 
-
+/* 
     .box__content__service-title {
         font-size: 30px;
         text-align: center;
@@ -1426,7 +1426,7 @@ padding: 0;
     }
     
 }
-
+ */
 
 @media (max-width:380px) { 
 
