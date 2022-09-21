@@ -26,3 +26,26 @@ a {
 }
 
 
+//extend
+
+.flexi {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.feet__red {
+    padding: 5px;
+    margin: 30px 15px 15px 5px;
+}
+
+
+//mixins
+
+@mixin templateGrid ($column,$fraction,$gap) {
+    display: grid;
+    grid-template-columns: repeat($column, $fraction);
+    gap: $gap;
+
+}

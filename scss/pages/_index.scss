@@ -1,6 +1,8 @@
 
 
 .banner {
+
+    @extend .flexi;
     background-color: rgb(231, 231, 250); 
     background-image: url(/assets/Image/duo_project_2.jpg);
     height: 70vh;
@@ -8,19 +10,13 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat : no-repeat;
-    @extend .flexi;
-    //display: flex;
-    //flex-flow: row wrap;
-    //justify-content: center; 
     align-items: center;
     opacity: 0.85; 
       
     &__title {
-        color: white;
-/*         display: flex;
-        flex-flow: row wrap;
-        justify-content: center; */
+
         @extend .flexi;
+        color: white;       
         font-family: 'Nunito Sans', sans-serif;
         font-style: normal;    
         text-shadow: 1px  0px 0px black,
@@ -28,22 +24,21 @@
        -1px  0px 0px black,
         0px -1px 0px black;
 
-        &__text-1 {
+       h1 {
         font-size: 65px;
           font-weight: bold;  
           text-align: center;
           background-color: rgba(3, 3, 49, 0.653);
-          margin: 15vh 5vh;
+          margin: 12vh 5vh;
 
         }
 
-        &__text-2 {
+        h2 {
             font-size: 60px;
-          text-align: center;
-          flex-direction: row;
-          justify-content: center;
-          line-height: 0.5;    
-          margin:0 10px;
+            text-align: center;
+            flex-direction: row;
+            justify-content: center;  
+            margin:0 10px;
 
         }
     }
@@ -140,6 +135,7 @@
 //contenido
 
 .boxs__titles {
+    
     margin: 10vh 0;
     display: grid;
     grid-template-rows: repeat(3, 0.5fr); 
@@ -160,12 +156,9 @@
 
     &-title {
 
+        @extend .flexi;
         font-size: 35px;
         font-style: italic;
-/*         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center; */
-        @extend .flexi;
         margin:5px 0 5px 0;
         z-index: 0;
         animation-name: Boxtitle;
@@ -174,11 +167,9 @@
     }
 
     &-description {
-        font-size: 20px;
-/*         display: flex;
-        flex-flow: row wrap;
-        justify-content: center; */
+        
         @extend .flexi;
+        font-size: 20px;      
         margin: 10px 50px;
         text-align:justify;
         z-index: 0;
@@ -212,9 +203,7 @@
     
     &__container {
 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        @include templateGrid (3,1fr,30px); 
         margin: 0 auto;
 
         &-banner {
@@ -293,7 +282,6 @@
 
         }
 
-
         
     }
 
@@ -301,162 +289,166 @@
 }
 
 
-.box__find-one {
-    display: flex;
-    margin: 10px;
-    padding: 5px;
 
-    img {
-        text-align:left;
-        width: 300px;
-        height: 200px;
-        justify-content: flex-start;
-    }
-}
+.box__find {
 
-ul {
-    list-style: none;
+    background-color: #f4f6f7;;
 
-    li {
+    &-one {
+        display: flex;
         margin: 10px;
-        text-align: right;
+        padding: 5px;
 
 
-        .box__icon-st {
-            margin-bottom: 15px;
-            align-items: left;
- 
-    
-            &::before {
-                font-family:"Font Awesome 5 Free";
-                content:"\f0eb";
-                margin-right:15px;
-               text-align: left;
-                
-            }
-        }
-    
-        
-        .box__icon-nd {
-    
-            margin-bottom: 15px;
-            align-items: left;
-
-    
-            &::before {
-                font-family:"Font Awesome 5 Free";
-                content:"\f1d8";
-                margin-right:15px;
-                text-align:left;
-                
-            }
-    
-        }
-    
-       
-        
-        .box__icon-rd {
-            margin-bottom: 15px;
-    
-            &::before {
-            font-family:"Font Awesome 5 Free";
-            content:"\f14a";
-            margin-right:17.8px;
+        img {
             text-align:left;
-            
-            
-            }
-        }
-        
-        .box__icon-four{
-    
-            margin-bottom: 15px;
-
-            
-            &::before {
-                font-family:"Font Awesome 5 Free";
-                content:"\f59a";
-                margin-right:15px;
-                text-align:left;
-                
-            }
-        
-        }
-    
-        
-        .box__icon-five {
-    
-            margin-bottom: 15px;
-    
-            &::before {
-                font-family:"Font Awesome 5 Free";
-                content:"\f252";
-                margin-right:15px;
-                text-align:left;
-                align-items: left;
-                
-            }
-        }    
-    
-        .box__icon-six {
-        
-            margin-bottom: 15px;
-
-            &::before {
-                font-family:"Font Awesome 5 Free";
-                content:"\2a";
-                margin-right:15px;
-                text-align:left;
-
-            }
-        }    
-
-
-        .box__icon-seven {
-        
-            margin-bottom: 15px;
-
-            &::before {
-                font-family:"Font Awesome 5 Free";
-                content:"\f2bd";    
-                margin-right:15px;
-                
-
-            }
-        }
-        
-        
-        .box__icon-eight {
-            
-            margin-bottom: 15px;
-
-            &::before {
-            font-family:"Font Awesome 5 Free";
-            content:"\f080";    
-            margin-right:15px;
-            
-
-            }
-            
-        }
-    
-        .box__icon-nine{
-        
-            margin-bottom: 15px;
-
-            &::before {
-                font-family:"Font Awesome 5 Free";
-                content:"\f5c0";    
-                margin-right:15px;
-                
-
-            }
+            width: 300px;
+            height: 200px;
+            justify-content: flex-start;
         }
     }
 
-    
-    
-}
+    ul {
+        list-style: none;
+
+        li {
+            margin: 10px;
+            text-align:left !important;
+
+
+            .box__icon-st {
+                margin-bottom: 15px;
+                align-items: right;
+            
+            
+                &::before {
+                    font-family:"Font Awesome 5 Free";
+                    content:"\f0eb";
+                    margin-right:1px;
+                   align-items: right;
+
+                }
+            }
+        
+
+            .box__icon-nd {
+            
+                margin-bottom: 15px;
+                align-items: left;
+
+            
+                &::before {
+                    font-family:"Font Awesome 5 Free";
+                    content:"\f1d8";
+                    margin-right:15px;
+                    text-align:left;
+
+                }
+            
+            }
+        
+        
+
+            .box__icon-rd {
+                margin-bottom: 15px;
+            
+                &::before {
+                font-family:"Font Awesome 5 Free";
+                content:"\f14a";
+                margin-right:17.8px;
+                text-align:left;
+                
+                
+                }
+            }
+
+            .box__icon-four{
+            
+                margin-bottom: 15px;
+
+
+                &::before {
+                    font-family:"Font Awesome 5 Free";
+                    content:"\f59a";
+                    margin-right:15px;
+                    text-align:left;
+
+                }
+            
+            }
+        
+
+            .box__icon-five {
+            
+                margin-bottom: 15px;
+            
+                &::before {
+                    font-family:"Font Awesome 5 Free";
+                    content:"\f252";
+                    margin-right:15px;
+                    text-align:left;
+                    align-items: left;
+
+                }
+            }    
+        
+            .box__icon-six {
+            
+                margin-bottom: 15px;
+
+                &::before {
+                    font-family:"Font Awesome 5 Free";
+                    content:"\2a";
+                    margin-right:15px;
+                    text-align:left;
+
+                }
+            }    
+
+
+            .box__icon-seven {
+            
+                margin-bottom: 15px;
+
+                &::before {
+                    font-family:"Font Awesome 5 Free";
+                    content:"\f2bd";    
+                    margin-right:15px;
+
+
+                }
+            }
+
+
+            .box__icon-eight {
+
+                margin-bottom: 15px;
+
+                &::before {
+                font-family:"Font Awesome 5 Free";
+                content:"\f080";    
+                margin-right:15px;
+                
+
+                }
+
+            }
+        
+            .box__icon-nine{
+            
+                margin-bottom: 15px;
+
+                &::before {
+                    font-family:"Font Awesome 5 Free";
+                    content:"\f5c0";    
+                    margin-right:15px;
+
+
+                }
+            }
+        }   
+    }
+}    
 
 /* Media Queries para todo el proyecto */
 
@@ -464,16 +456,19 @@ ul {
 
     //banner
 
-    .banner__title__text-2 {
-        font-size: 50px;
-        margin-bottom: 30px;
-    }
+    .banner__title {
+        h2 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+    }    
 
     
     //tarjetas
 
     .cards__container {
-        grid-template-columns:  repeat(2, 1fr);
+
+        @include templateGrid (2, 1fr,5px);
         justify-items: center;
 
         &-banner {
@@ -499,16 +494,16 @@ ul {
     
     .banner {
        background-image: url(/assets/Image/geometric.jpg);
-       height: 40vh;
+       height: 60vh;
 
-        &__title__text-1 {
+        h1 {
 
            font-size: 50px;
-           margin: 5vh 15vh;
+           margin: 2vh 15vh;
            padding: 10px;
         }
 
-        &__title__text-2 {
+        h2 {
 
            font-size: 40px;
            margin:10px 15vh;
@@ -524,17 +519,18 @@ ul {
 
     
 
-        &__titles-subtitle {
+        &-subtitle {
 
-           font-size: 25px;
+           font-size: 45px;
            margin: 20px auto;
         }
 
-        &__titles-title {
-        
+        &-title {
+
            grid-template-rows: repeat(2, 1fr);
-           font-size: 35px;
-           margin: 10px auto;
+           font-size: 50px;
+           margin: 5px;
+           font-weight: bold;
 
         }
 
@@ -549,19 +545,18 @@ ul {
     }
 
 
-     .cards {
+    .cards {
         margin: 5px;
 
         &__container {
 
-            grid-template-columns:  repeat(2, 1fr);
+            @include templateGrid (2, 1fr, 5px);
             justify-items: center;
-            gap: 30px;
- 
 
 
             &-banner {
 
+                max-width: 80%;
                 width: 400px;
                 margin-bottom: 30px;
 
@@ -589,16 +584,16 @@ ul {
 
         background-image: url(/assets/Image/geometric.jpg);
         background-repeat : no-repeat;
-        height: 40vh;
+        height: 60vh;
 
-        &__title__text-1 {
+        h1 {
 
             font-size: 30px;
             padding: 10px;
 
         }
 
-        &__title__text-2 {
+        h2 {
     
             font-size: 25px;
 
@@ -612,6 +607,7 @@ ul {
         margin: 20px auto;
 
         &-title {
+
 
             grid-template-rows: repeat(1, 1fr);
             font-size: 32px;
@@ -631,7 +627,7 @@ ul {
         &-description {
 
             display: block;
-            font-size: 18px;
+            font-size: 16px;
             margin: 0 10px;
         }
     
@@ -642,19 +638,42 @@ ul {
          margin: 0;
      
         &__container {
-            grid-template-columns:  repeat(1, 1fr);
-            width: 400px;
+
+            @include templateGrid (2, 1fr, 5px);
+            width: 300px;
+            max-width: 70%;
+            max-height: 70%;
             justify-content: center;
             gap: 5px;
 
 
             &-banner {
                 padding: 0 auto;
+                max-width: 70%;
+
+
+            }
+
+            img {
+                width: 200px;
+                height: 150px;
             }
 
             h2 {
 
-                font-size: 22px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            a {
+
+                padding: 15px;
+                border-radius: 15px;
+                font-size: 14px;
             }
 
         }
@@ -679,23 +698,36 @@ ul {
 
 @media  (max-width:576px) {
 
+
+
     .banner {
 
         background-image: url(/assets/Image/geometric.jpg);
         background-repeat : no-repeat;
         height: 40vh;
 
-        &__text-1 {
-        margin: 3px;
-        padding: 0;
-        font-size: 16px;
+        &__title {
+
+            flex-direction: column;
+
+            h1{
+                margin: 10px;
+                padding: 10px;
+                font-size: 26px;
+                text-align: center;
+                }
+            
+                h2 {
+             
+                font-size: 22px;
+                margin: 15px 0 5px 0;
+                text-align: center;
+                
+                }  
+
         }
-    
-        &__text-2 {
-     
-        font-size: 15px;
-        margin: 15px 3px;
-        }  
+
+
     }  
 
     .boxs__titles {
@@ -703,11 +735,12 @@ ul {
 
         &-title {
 
-            grid-template-rows: repeat(1, 1fr);
+            @include templateGrid (1, 1fr, 3px);
             font-size: 32px;
             margin: 1px auto;
             color:  rgb(6, 6, 68);
             font-weight: bolder;
+            text-align: center;
 
         }
 
@@ -715,6 +748,7 @@ ul {
 
             font-size: 30px;
             margin: 2px auto;
+            text-align: center;
 
         }
 
@@ -730,52 +764,49 @@ ul {
 
         margin: 1px;
         padding: 0;
-    }
+    
 
-    .cards__container {
-        align-content: center;
-        margin: 0 auto;
-        gap: auto;
+        &__container {
+            @include templateGrid (1, 1fr, 5px);
+            align-content: center;
+            margin: 0 auto;
 
-        &-banner {
 
-            width: 350px;
-            margin-bottom: 20px;
-            padding: 0 auto;
-            display: flex;
-            flex-flow: row wrap;
+            &-banner {
 
-            img {
-                width: 300px ;
-                height: 200px;
+                width: 350px;
+                margin-bottom: 20px;
                 padding: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+
+                img {
+                    width: 200px;
+                    height: 150px;
+                    padding: 0 auto;
+
+                }
+
+                h2 {
+                    font-size: 22px;
+                    text-align: center;
+                }
+
+                p {
+                    padding: 10px;
+
+                }
+
+                a {
+                    font-size: 12px;
+                    padding: 7px;
+                    border-radius: 10px;
+
+                }
 
             }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            p {
-                padding: 10px;
-
-            }
-
-            a {
-                font-size: 18px;
-                padding: 7px;
-                border-radius: 8px;
-
-            }
-
         }
+
     }
-
-
- 
-
-
-
-
 
 }

@@ -564,7 +564,7 @@
     
 } */
 
-.box__boton_service {
+/* .box__boton_service {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -592,7 +592,7 @@
     border: 2px solid blue;
     font-weight: bold;
 
-}
+} */
 /* Planes  */
 
 .box__content__plan-head {
@@ -605,7 +605,7 @@
     position:relative;
 }
 
-.box__content__plan-head h2 {
+/* .box__content__plan-head h2 {
     color: white;
     font-size: 70px;
     font-weight: bold;
@@ -646,7 +646,7 @@
     font-style: normal;
     margin: 25px;
     text-align: center;
-}
+} */
 
 .box__content__plan {
     margin-top: 60px;
@@ -693,7 +693,7 @@
 /* Aplicando transformación */
 
 
-.box__content__plan-article h3 {
+./* box__content__plan-article h3 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
@@ -710,9 +710,9 @@
 .box__content__plan-price h2 {
     font-size: 55px;
     padding-left: 5px;
-}
+} */
 
-.box__content__plan-price h4 {
+/* .box__content__plan-price h4 {
     font-size: 25px;
     padding-left: 5px;
 }
@@ -729,9 +729,9 @@ padding-bottom: 2px;
     font-size: 20px;
     list-style-type: disc;
 
-}
+} */
 
-.box__content__plan-btn {
+/* .box__content__plan-btn {
     margin-bottom:30px;
     display: flex;
     align-items: center;
@@ -748,60 +748,21 @@ padding-bottom: 2px;
     margin-bottom: 20px;
     
 
-}
+} */
 
 
-.box__btn-plan:hover {
+/* .box__btn-plan:hover {
     border: 3px solid white;
     background-image: linear-gradient(to bottom, #051c37, #013553, #00516d, #016e84, #228c97);
     color: white;
 }
-
+ */
 
 
 /* Media Queries para todo el proyecto */
 
 @media (max-width:1250px) {
 
-
-   /* Responsive de servicios */
-
-  /*   .box__content__service-all {
-            margin: 60px 0;
-
-    }  
-         
-    .box__content__service__articles {
-        grid-template-rows: repeat(2,1fr);
-        align-content: center;
-    }
-
-
-    .box__content__service-head h2 {
-        color:black;
-        font-size: 60px;
-        text-align: center;
-        
-    }
-
-    .box__content__service-head h3 {
-        color: white;
-        background-color: rgba(3, 3, 49, 0.653);
-        margin: 0 200px;
-        text-align: center;
-    }
-    .box__content__service__articles {
-        grid-template-columns:  repeat(2, 1fr);
-        max-width: 50%;
-        align-content: center;
-    }
-
-
-
-    .box__content__service-article {
-        margin:10px;
-    } */
-    
      /* Responsive para planes */
 
      .box__content__plan {
@@ -988,63 +949,11 @@ padding-bottom: 2px;
 
      /* responsive de planes */
 
-     .box__content__plan-head h3 {
-        font-size: 25px;
-        margin: auto 30px;
-    }
-
-    .box__content__plan-article {
-        max-width: 70%;
-        max-height: 70%;
-        font-size: 25px;
-    }
-        /* Responsive para planes */
-        .box__content__plan-articles {
-            grid-template-columns:  repeat(2, 1fr);
-            max-width: 70%;  
-            justify-content: center;
-            margin: auto;
-            }    
-
-    .box__content__plan-article h4 {
-        font-size: 13px;
-        padding: 5px;
-    }
-
-    .box__content__plan-price h2 {
-        font-size: 25px;
-        margin: 0;
-        padding: auto;
-    }
-
-    .box__content__plan-price-ol {
-        margin: 0 auto;
-        padding: 15px auto;
-    }
-
-    .box__content__plan-price-li {
-        font-size: 12px;
-        margin: 0 auto;
-        padding: 10px auto;
-    }
-
-}
+   
 
 
 
 @media (max-width:811px) { 
-/* Responsive de index */
-
-    .header__content-logo-img {
-        width: 60px;
-        border-radius: 35px;
-        display: inline-block;
-        position: relative;
-        right: 10px;
-        padding: 0.5px;
-        margin: 50px 5px 5px 5px;
-
-    }
 
 
 /*     .banner {
@@ -1059,120 +968,9 @@ padding-bottom: 2px;
         font-size: 30px;
         margin: 2vh 10vh;
         padding: 10px;
-     }
     
-     .banner__title__text-2 {
-    
-       font-size: 25px;
-       margin:7px 15vh;
-     }
-
-     .boxs__titles {
-        margin: 20px auto;
-    
-     }
-    
-     .box__title {
-        grid-template-rows: repeat(1, 1fr);
-         font-size: 24px;
-         margin: 1px auto;
-         color:  rgb(6, 6, 68);
-         font-weight: bolder;
-    
-     }
-     .box__subtitle {
-         font-size: 22px;
-         margin: 10px auto;
-        
-     } 
-    
-     .box__description {
-         display: block;
-         font-size: 12px;
-         margin: 0 10px;
-        
-    
-     }
-
-     .cards__content {
-        grid-template-columns:  repeat(1, 1fr);
-        max-width: 50%;
-        justify-content: center;
-    }
-    .card__header__title {
-        font-size: 22px;
-    }
-
-    .shape3 {
-        display: none;
-    }
-
-    .shape3 img {
-        display: none;
-    }
-
-    .box__image {
-        display: none;
-    } */
-
-    /* Responsive para nosotros */
-
-
-/* Responsive servicios a 811px */
-/* .box__content__service-head{
-    background-image: url(../assets/Image/geometric.jpg);
-    background-repeat : no-repeat;
-    height: 30vh;
-    
-}
-
-.box__content__service-head h2 {
-    font-size: 35px;
-    color: white;
-    text-align: center;
-}
-
-
-
-.box__content__service-head h3 {
-    font-size: 20px;
-    color: white;
-    margin: 0 200px;
-}
-
-.box__content__service-all{
-margin: 0 auto;
-padding: 0;
-
-
-}
-
-.box__content__service__articles {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 50%;
-    justify-content: center;
-}
-
-
-.box__content__service-article  {
-    width: 300px;
-    margin:0 auto;
    
 }
-
-.box__content__service-article:hover {
-    background-color: red;
-}
-
-.box__boton_service {
-    margin-bottom: 30px;
-
-}
-.box__boton-presu {
-    max-width: 60%;
-    font-size: 25px;
-}
- */
 
 
     /* responsive para contactos */
