@@ -25,6 +25,11 @@ a {
   flex-flow: row wrap;
   justify-content: center; }
 
+.icon, .box__find ul li .box__icon-st::before, .box__find ul li .box__icon-nd::before, .box__find ul li .box__icon-rd::before, .box__find ul li .box__icon-four::before, .box__find ul li .box__icon-five::before, .box__find ul li .box__icon-six::before, .box__find ul li .box__icon-seven::before, .box__find ul li .box__icon-eight::before, .box__find ul li .box__icon-nine::before {
+  font-family: "Font Awesome 5 Free";
+  margin-right: 17.8px;
+  text-align: left; }
+
 .feet__red, .footer__content-red-fac, .footer__content-red-tw, .footer__content-red-ins {
   padding: 5px;
   margin: 30px 15px 15px 5px; }
@@ -370,68 +375,45 @@ a {
         margin-bottom: 15px;
         align-items: right; }
         .box__find ul li .box__icon-st::before {
-          font-family: "Font Awesome 5 Free";
-          content: "\f0eb";
-          margin-right: 1px;
-          align-items: right; }
+          content: "\f0eb"; }
       .box__find ul li .box__icon-nd {
         margin-bottom: 15px;
         align-items: left; }
         .box__find ul li .box__icon-nd::before {
-          font-family: "Font Awesome 5 Free";
-          content: "\f1d8";
-          margin-right: 15px;
-          text-align: left; }
+          content: "\f1d8"; }
       .box__find ul li .box__icon-rd {
         margin-bottom: 15px; }
         .box__find ul li .box__icon-rd::before {
-          font-family: "Font Awesome 5 Free";
-          content: "\f14a";
-          margin-right: 17.8px;
-          text-align: left; }
+          content: "\f14a"; }
       .box__find ul li .box__icon-four {
         margin-bottom: 15px; }
         .box__find ul li .box__icon-four::before {
-          font-family: "Font Awesome 5 Free";
-          content: "\f59a";
-          margin-right: 15px;
-          text-align: left; }
+          content: "\f59a"; }
       .box__find ul li .box__icon-five {
         margin-bottom: 15px; }
         .box__find ul li .box__icon-five::before {
-          font-family: "Font Awesome 5 Free";
           content: "\f252";
-          margin-right: 15px;
-          text-align: left;
           align-items: left; }
       .box__find ul li .box__icon-six {
         margin-bottom: 15px; }
         .box__find ul li .box__icon-six::before {
-          font-family: "Font Awesome 5 Free";
-          content: "\2a";
-          margin-right: 15px;
-          text-align: left; }
+          content: "\2a"; }
       .box__find ul li .box__icon-seven {
         margin-bottom: 15px; }
         .box__find ul li .box__icon-seven::before {
-          font-family: "Font Awesome 5 Free";
-          content: "\f2bd";
-          margin-right: 15px; }
+          content: "\f2bd"; }
       .box__find ul li .box__icon-eight {
         margin-bottom: 15px; }
         .box__find ul li .box__icon-eight::before {
-          font-family: "Font Awesome 5 Free";
-          content: "\f080";
-          margin-right: 15px; }
+          content: "\f080"; }
       .box__find ul li .box__icon-nine {
         margin-bottom: 15px; }
         .box__find ul li .box__icon-nine::before {
-          font-family: "Font Awesome 5 Free";
-          content: "\f5c0";
-          margin-right: 15px; }
+          content: "\f5c0"; }
 
 /* Media Queries para todo el proyecto */
 @media (max-width: 1200px) {
+  /* @media (max-width:1200px) { */
   .banner__title h2 {
     font-size: 50px;
     margin-bottom: 30px; }
@@ -449,6 +431,7 @@ a {
         padding: 22px; } }
 
 @media (max-width: 992px) {
+  /* @media (max-width:992px) { */
   .banner {
     background-image: url(/assets/Image/geometric.jpg);
     height: 60vh; }
@@ -490,6 +473,7 @@ a {
           padding: 15px; } }
 
 @media (max-width: 768px) {
+  /* @media (max-width:768px) {  */
   .banner {
     background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
@@ -548,6 +532,7 @@ a {
         display: none; } }
 
 @media (max-width: 576px) {
+  /* @media  (max-width:576px) { */
   .banner {
     background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
@@ -1004,6 +989,7 @@ a {
         font-size: 20px; } }
 
 @media (max-width: 576px) {
+  /* @media (max-width:576px) { */
   .box__content__service-head {
     margin: auto; }
     .box__content__service-head h3 {
@@ -1021,7 +1007,7 @@ a {
       font-size: 15px;
       margin-bottom: 35px; }
   .box__content__service {
-    margin: 0 auto;
+    margin: 40px auto;
     align-content: center; }
     .box__content__service__articles {
       margin: 0 auto;
@@ -1245,6 +1231,7 @@ a {
           margin-top: 10vh; } }
 
 @media (max-width: 768px) {
+  /* @media (max-width:768px) { */
   .box__plan__head h2 {
     font-size: 30px;
     padding: 10px; }
@@ -1256,3 +1243,25 @@ a {
   .box__plan-title p {
     font-size: 16px;
     margin: 30px 10px; } }
+
+@media (max-width: 576px) {
+  .box__plan__content__articles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px; }
+    .box__plan__content__articles-ar {
+      max-width: 90%;
+      margin: 10px;
+      padding: 10px; }
+      .box__plan__content__articles-ar h3 {
+        font-size: 35px; }
+      .box__plan__content__articles-ar-pri h2 {
+        font-size: 30px; }
+      .box__plan__content__articles-ar-pri h4 {
+        font-size: 26px; }
+      .box__plan__content__articles-ar-data {
+        margin: 3px; }
+        .box__plan__content__articles-ar-data ol li {
+          font-size: 18px;
+          font-weight: normal;
+          padding: auto; } }

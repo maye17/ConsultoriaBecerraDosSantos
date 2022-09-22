@@ -25,6 +25,25 @@ a {
     text-decoration: none;
 }
 
+//mapa
+
+$breakpoints: (
+
+    sm:576px,
+    md:768px,
+    lg:992px,
+    xl:1200px
+);
+
+@mixin breakpoint ($size) {
+
+    @if map-has-key($breakpoints, $size) {
+        @media (max-width: #{map-get($breakpoints, $size)}) {
+                @content;
+            }
+        }
+    }
+    
 
 //extend
 
@@ -32,6 +51,14 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+
+.icon {
+    font-family:"Font Awesome 5 Free";
+    margin-right:17.8px;
+    text-align:left;
+
 }
 
 
@@ -49,3 +76,4 @@ a {
     gap: $gap;
 
 }
+

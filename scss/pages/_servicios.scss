@@ -395,7 +395,8 @@
     }  
 }    
 
-@media (max-width:576px) {
+@include breakpoint (sm) {
+/* @media (max-width:576px) { */
 
     .box__content__service-head {
         margin: auto;
@@ -431,7 +432,7 @@
     }
 
     .box__content__service {    
-        margin: 0 auto;
+        margin: 40px auto;
         align-content: center;
 
 

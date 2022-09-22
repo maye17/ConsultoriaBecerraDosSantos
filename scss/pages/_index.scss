@@ -2,6 +2,7 @@
 
 .banner {
 
+    
     @extend .flexi;
     background-color: rgb(231, 231, 250); 
     background-image: url(/assets/Image/duo_project_2.jpg);
@@ -12,6 +13,8 @@
     background-repeat : no-repeat;
     align-items: center;
     opacity: 0.85; 
+
+
       
     &__title {
 
@@ -322,10 +325,10 @@
             
             
                 &::before {
-                    font-family:"Font Awesome 5 Free";
+
+                    @extend .icon;
                     content:"\f0eb";
-                    margin-right:1px;
-                   align-items: right;
+
 
                 }
             }
@@ -338,10 +341,9 @@
 
             
                 &::before {
-                    font-family:"Font Awesome 5 Free";
+                    @extend .icon;
                     content:"\f1d8";
-                    margin-right:15px;
-                    text-align:left;
+
 
                 }
             
@@ -353,11 +355,9 @@
                 margin-bottom: 15px;
             
                 &::before {
-                font-family:"Font Awesome 5 Free";
+                    @extend .icon;
                 content:"\f14a";
-                margin-right:17.8px;
-                text-align:left;
-                
+
                 
                 }
             }
@@ -368,10 +368,9 @@
 
 
                 &::before {
-                    font-family:"Font Awesome 5 Free";
+                    @extend .icon;
                     content:"\f59a";
-                    margin-right:15px;
-                    text-align:left;
+
 
                 }
             
@@ -383,10 +382,8 @@
                 margin-bottom: 15px;
             
                 &::before {
-                    font-family:"Font Awesome 5 Free";
+                    @extend .icon;
                     content:"\f252";
-                    margin-right:15px;
-                    text-align:left;
                     align-items: left;
 
                 }
@@ -397,10 +394,9 @@
                 margin-bottom: 15px;
 
                 &::before {
-                    font-family:"Font Awesome 5 Free";
+
+                    @extend .icon;
                     content:"\2a";
-                    margin-right:15px;
-                    text-align:left;
 
                 }
             }    
@@ -411,10 +407,9 @@
                 margin-bottom: 15px;
 
                 &::before {
-                    font-family:"Font Awesome 5 Free";
-                    content:"\f2bd";    
-                    margin-right:15px;
 
+                    @extend .icon;
+                    content:"\f2bd";    
 
                 }
             }
@@ -425,10 +420,9 @@
                 margin-bottom: 15px;
 
                 &::before {
-                font-family:"Font Awesome 5 Free";
-                content:"\f080";    
-                margin-right:15px;
-                
+                    
+                    @extend .icon; 
+                    content:"\f080";    
 
                 }
 
@@ -439,10 +433,9 @@
                 margin-bottom: 15px;
 
                 &::before {
-                    font-family:"Font Awesome 5 Free";
-                    content:"\f5c0";    
-                    margin-right:15px;
 
+                    @extend .icon;
+                    content:"\f5c0";    
 
                 }
             }
@@ -452,7 +445,9 @@
 
 /* Media Queries para todo el proyecto */
 
-@media (max-width:1200px) {
+@include breakpoint(xl){
+
+/* @media (max-width:1200px) { */
 
     //banner
 
@@ -489,8 +484,9 @@
 }
 
 
+@include breakpoint (lg) {
 
-@media (max-width:992px) {
+/* @media (max-width:992px) { */
     
     .banner {
        background-image: url(/assets/Image/geometric.jpg);
@@ -577,8 +573,8 @@
 
 }
 
-
-@media (max-width:768px) { 
+@include breakpoint (md) {
+/* @media (max-width:768px) {  */
 
     .banner {
 
@@ -696,7 +692,9 @@
 }
 
 
-@media  (max-width:576px) {
+@include breakpoint (sm) {
+
+/* @media  (max-width:576px) { */
 
 
 
