@@ -888,7 +888,7 @@ a {
       border: 2px solid blue;
       font-weight: bold; }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   /* Responsive de servicios */
   .box__content__service-head {
     margin: auto; }
@@ -916,7 +916,7 @@ a {
   .box__content__service-head {
     background-image: url(/assets/Image/geometric.jpg);
     background-repeat: no-repeat;
-    height: 40vh; }
+    height: 60vh; }
     .box__content__service-head h2 {
       margin-top: 10vh;
       font-size: 60px;
@@ -951,8 +951,8 @@ a {
 @media (max-width: 768px) {
   .box__content__service-head {
     background-image: url(/assets/Image/geometric.jpg);
-    background-repeat: no-repeat;
-    height: 30vh; }
+    height: 60vh;
+    background-repeat: no-repeat; }
     .box__content__service-head h2 {
       font-size: 35px;
       color: white;
@@ -1265,3 +1265,115 @@ a {
           font-size: 18px;
           font-weight: normal;
           padding: auto; } }
+
+.box__contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px; }
+  .box__contact .box__container__contact {
+    background-color: rgba(235, 235, 248, 0.758);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    margin: 15px 50px;
+    padding: 15px;
+    border: 0px solid black; }
+    .box__contact .box__container__contact-sub {
+      color: black;
+      font-size: 30px;
+      text-align: center;
+      align-self: center;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid black;
+      width: 60%; }
+    .box__contact .box__container__contact-form {
+      height: 80%;
+      text-align: left;
+      color: black;
+      margin-right: 20px;
+      margin-left: 20px; }
+      .box__contact .box__container__contact-form-send {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%; }
+      .box__contact .box__container__contact-form-title {
+        width: 40%;
+        text-align: left;
+        font-size: 15px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 3px; }
+      .box__contact .box__container__contact-form-input {
+        color: black;
+        height: 40px;
+        padding-left: 5px;
+        width: 100%;
+        font-size: 13px;
+        text-align: left;
+        border-bottom: 10px solid black;
+        border: 1px;
+        border-radius: 4px;
+        box-shadow: 0px;
+        background-color: white;
+        margin: 1px 10px 10px 0; }
+      .box__contact .box__container__contact-form-area {
+        color: black;
+        padding: 5px;
+        width: 100%;
+        font-size: 13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+        border-bottom: 10px solid black;
+        border: 1px;
+        border-radius: 4px;
+        background-color: white;
+        margin: 15px 10px 20px 0; }
+    .box__contact .box__container__contact .box__btn {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center; }
+      .box__contact .box__container__contact .box__btn-espace {
+        margin: 15px; }
+  .box__contact__data {
+    margin-top: 15px;
+    background-color: #060644;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr, 5px); }
+    .box__contact__data-article {
+      display: grid;
+      grid-template-areas: "img titulo" "img contenido"; }
+      .box__contact__data-article img {
+        grid-area: img;
+        gap: 20px;
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        margin-top: 85px;
+        margin-left: 90px;
+        margin-right: 50px;
+        justify-content: center;
+        align-content: center;
+        border-radius: 13px; }
+      .box__contact__data-article h3 {
+        grid: titulo;
+        gap: 30px;
+        color: white;
+        font-size: 20px;
+        margin-top: 70px;
+        margin-left: 30px; }
+      .box__contact__data-article p {
+        grid: contenido;
+        width: 70%;
+        color: white;
+        margin: 30px;
+        padding-right: 40px; }

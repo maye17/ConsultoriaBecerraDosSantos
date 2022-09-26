@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik+Iso&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="../css/style.css">
     <title>Consulting Gadbizz</title>
 </head>
@@ -83,46 +82,46 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="box__contenedor">
-    <section class="box__container-contact">
-      <div class="box__container-sub">
-        <h4>Escribenos!</h4>
-      </div>
-      <div class="box__form">  
-        <form  class="form" action="send.php" method="get" enctype="multipart/form-data">
-          <label class="box__form-title" for="name">Escriba su nombre*</label>
-          <input class="box__form-input" type="text" placeholder="Ej: Juan Perez" id="name">
-          <label class="box__form-title" for="mail">Escriba su correo*</label>
-          <input class="box__form-input" type="text" placeholder="Ej:info@gadbizz.com" id="mail">
-          <label class="box__form-title" for="phone">Número de teléfono</label>
-          <input class="box__form-input" type="text" placeholder="Ej:11-3333-1111" id="phone">
-          <label class="box__form-title" for="subject">Asunto*:</label>
-          <input class="box__form-input" type="text" placeholder="Ej: Información de consultoria" id="subject">
-          <label class="box__form-title" for="men">Mensaje*</label>
-          <textarea  class="box__form-area" name="menssage" id="men" cols="20" rows="8" placeholder=""></textarea>
-        </form>
+    <div class="container-fluid box__contact">
+      <section class="box__container__contact">
+        <div class="box__container__contact-sub">
+          <h4>Escribenos!</h4>
+        </div>
+        <div class="box__contanier__contact-form">  
+          <form  class="form-send" action="send.php" method="get" enctype="multipart/form-data">
+            <label class="form-title" for="name">Escriba su nombre*</label>
+            <input class="form-input" type="text" placeholder="Ej: Juan Perez" id="name">
+            <label class="form-title" for="mail">Escriba su correo*</label>
+            <input class="form-input" type="text" placeholder="Ej:info@gadbizz.com" id="mail">
+            <label class="form-title" for="phone">Número de teléfono</label>
+            <input class="form-input" type="text" placeholder="Ej:11-3333-1111" id="phone">
+            <label class="form-title" for="subject">Asunto*:</label>
+            <input class="form-input" type="text" placeholder="Ej: Información de consultoria" id="subject">
+            <label class="form-title" for="men">Mensaje*</label>
+            <textarea  class="form-area" name="menssage" id="men" cols="20" rows="8" placeholder=""></textarea>
+          </form>
+        </div>  
         <div>
-          <input class="termin" type="checkbox" name="termin" id=""termin/>
-          <label for="termin">He leído y aceptado los terminos y condiciones</label>
+        <input class="termin" type="checkbox" name="termin" id=""termin/>
+        <label for="termin">He leído y aceptado los terminos y condiciones</label>
         </div>  
         <div class="box__btn">
-          <button class="box__boton-send" type="submit">Enviar</button>
-          <button class="box__boton-clean" type="reset">Limpiar</button>    
+          <button class="btn btn-primary box_btn-espace" type="submit">Enviar</button>
+          <button class="btn btn-warning box_btn-espace" type="reset">Limpiar</button>    
         </div> 
-      </div>
-    </section>
-    <section class="box__container__contact-data">
-      <article class="box__contact__article">
+      </section>
+    <section class="box__contact__data">
+      <article class="box__contact__data-article">
         <img src="../assets/icon/globo.png" alt="direccion">
-        <h3 class="box__company">Compañia</h3>
-        <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
+        <h3>Compañia</h3>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
       </article>
-      <article class="box__contact__article">
+      <article class="box__contact__data-article">
         <img src="../assets/icon/llamada-telefonica.png" alt="telefono">
         <h3 class="box__company">Teléfono</h3>
         <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
       </article>
-      <article class="box__contact__article">
+      <article class="box__contact__data-article">
         <img src="../assets/icon/sms.png" alt="correo">
         <h3 class="box__company">Email</h3>
         <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>

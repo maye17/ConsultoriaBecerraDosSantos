@@ -191,7 +191,7 @@
 
 //medias queries
 
-@media (max-width:1250px) {
+@include breakpoint (xl) {
 
 
     /* Responsive de servicios */
@@ -241,12 +241,12 @@
           
 }
 
-@media (max-width:992px){
+@include breakpoint (lg) {
 
     .box__content__service-head{
         background-image: url(/assets/Image/geometric.jpg);
         background-repeat : no-repeat;
-        height: 40vh;
+        height: 60vh;
 
         h2 {
 
@@ -320,8 +320,9 @@
 
     .box__content__service-head{
         background-image: url(/assets/Image/geometric.jpg);
+        height: 60vh;
         background-repeat : no-repeat;
-        height: 30vh;
+ 
 
         h2 {
 
@@ -400,6 +401,7 @@
 
     .box__content__service-head {
         margin: auto;
+        
 
         h3 {
 
