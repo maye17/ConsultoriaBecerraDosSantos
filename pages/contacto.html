@@ -83,48 +83,54 @@
       </button>
     </div>
     <div class="container-fluid box__contact">
-      <section class="box__container__contact">
+      <section class="container box__container__contact">
         <div class="box__container__contact-sub">
           <h4>Escribenos!</h4>
         </div>
-        <div class="box__contanier__contact-form">  
-          <form  class="form-send" action="send.php" method="get" enctype="multipart/form-data">
-            <label class="form-title" for="name">Escriba su nombre*</label>
-            <input class="form-input" type="text" placeholder="Ej: Juan Perez" id="name">
-            <label class="form-title" for="mail">Escriba su correo*</label>
-            <input class="form-input" type="text" placeholder="Ej:info@gadbizz.com" id="mail">
-            <label class="form-title" for="phone">Número de teléfono</label>
-            <input class="form-input" type="text" placeholder="Ej:11-3333-1111" id="phone">
-            <label class="form-title" for="subject">Asunto*:</label>
-            <input class="form-input" type="text" placeholder="Ej: Información de consultoria" id="subject">
-            <label class="form-title" for="men">Mensaje*</label>
-            <textarea  class="form-area" name="menssage" id="men" cols="20" rows="8" placeholder=""></textarea>
+        <div class="box__container__contact-form">  
+          <form  class="box__container__contact-form-send" action="send.php" method="get" enctype="multipart/form-data">
+            <label class="box__container__contact-form-title" for="name">Escriba su nombre*</label>
+            <input class="box__container__contact-form-input" type="text" placeholder="Ej: Juan Perez" id="name">
+            <label class="box__container__contact-form-title" for="mail">Escriba su correo*</label>
+            <input class="box__container__contact-form-input" type="text" placeholder="Ej:info@gadbizz.com" id="mail">
+            <label class="box__container__contact-form-title" for="phone">Número de teléfono</label>
+            <input class="box__container__contact-form-input" type="text" placeholder="Ej:11-3333-1111" id="phone">
+            <label class="box__container__contact-form-title" for="subject">Asunto*:</label>
+            <input class="box__container__contact-form-input" type="text" placeholder="Ej: Información de consultoria" id="subject">
+            <label class="box__container__contact-form-title" for="men">Mensaje*</label>
+            <textarea  class="box__container__contact-form-area" name="menssage" id="men" cols="30" rows="8" placeholder=""></textarea>
           </form>
-        </div>  
-        <div>
-        <input class="termin" type="checkbox" name="termin" id=""termin/>
-        <label for="termin">He leído y aceptado los terminos y condiciones</label>
-        </div>  
-        <div class="box__btn">
-          <button class="btn btn-primary box_btn-espace" type="submit">Enviar</button>
-          <button class="btn btn-warning box_btn-espace" type="reset">Limpiar</button>    
-        </div> 
+          <div class="box__container__contact-form-termin">
+            <input class="termin" type="checkbox" name="termin" id=""termin/>
+            <label for="termin">He leído y aceptado los terminos y condiciones</label>
+          </div>  
+          <div class="box__container__contact-form-btn">
+            <button class="btn btn-primary box_btn-espace" type="submit">Enviar</button>
+            <button class="btn btn-warning box_btn-espace" type="reset">Limpiar</button>    
+          </div>
+        </div>   
       </section>
-    <section class="box__contact__data">
+    <section class="container box__contact__data">
       <article class="box__contact__data-article">
         <img src="../assets/icon/globo.png" alt="direccion">
         <h3>Compañia</h3>
-        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
+        <p >Av Córdoba al 300
+           <br> Buenos Aires - Argentina
+        </p>
       </article>
       <article class="box__contact__data-article">
         <img src="../assets/icon/llamada-telefonica.png" alt="telefono">
         <h3 class="box__company">Teléfono</h3>
-        <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
+        <p class="box__contact_des">+880 636 524 265,
+         <br> +880 636 524 265
+        </p>
       </article>
       <article class="box__contact__data-article">
         <img src="../assets/icon/sms.png" alt="correo">
         <h3 class="box__company">Email</h3>
-        <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
+        <p class="box__contact_des">info@gadbizz.com 
+          <br> contactanos@gadbizz.com
+        </p>
       </article>
     </section>
     </div> 
