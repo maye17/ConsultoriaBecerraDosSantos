@@ -290,7 +290,53 @@
 }
 
 
-@media  (max-width:576px) {
+@include breakpoint (sm) {
 
+
+    .header__content-us {
+
+        height: 50vh;
+
+    }
+
+
+    .box__content__us {
+
+        
+        &-parent {
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,46,56,1) 100%);
+            color: white;
+            animation-name: Boxtitle;
+            animation-duration: 1s ;
+            animation-timing-function:linear;
+
+        }
+
+    .box__content__aside {
+
+    
+    
+        &-img { 
+            
+            animation-name: Boxtitle;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            margin-left: 30px;
+        
+          }
+        }
+    
+
+        @keyframes Boxtitle {
+            0% {
+                transform: translateY(100%);
+            }
+        
+            100% {
+                transform: translateY(0%);
+            }
+        }
+    }
 
 }
