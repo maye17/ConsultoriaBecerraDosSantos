@@ -29,22 +29,36 @@
 .box__content__service-title {
     
     margin-top: 30px;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
+    text-align: center;
+
+    
+
+    &-sepa {
+
+        width: 100%;
+        height: 5px;
+        box-shadow:
+                    100px 0 white inset,
+                    670px 0 white inset ,
+                    800px 0 #03193B inset ;
+        
+
+    }
+  
+
 
     h2 {
         font-size: 50px;
         font-weight: bold;
+        text-align: center;
     }
 
     p {
         font-size: 20px;
-        display: flex;
-        flex-flow: row wrap;
-        margin: 10px 50px;
+        margin: 40px;
         justify-content: center;
-        text-align:justify;
+        text-align:center;
         z-index: 0;
         animation-name: Boxtitle;
         animation-duration: 1s;

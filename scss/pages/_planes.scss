@@ -43,7 +43,7 @@
     margin: 30px;
     text-align: center;
 
-    h4 {
+    h3 {
 
         font-size: 60px;
         text-align: center;
@@ -53,6 +53,7 @@
         animation-timing-function: linear;
         letter-spacing: normal;
 
+
     }
 
     p {
@@ -60,12 +61,14 @@
         font-size: 20px;
         margin: 10px 50px;
         font-style: oblique;
-        text-align: justify;
+        text-align: center;
         z-index: 0;
         animation-name: Boxtitle;
         animation-duration: 1s;
         animation-timing-function: linear;
         letter-spacing: normal;
+        justify-content: center;
+        align-items: center;
 
     }
     
@@ -74,27 +77,28 @@
 
 .box__plan__content {
     margin-top: 60px;
+    margin-left: 20px;
     padding: 0 20px;
     width: 100%;
-    align-content: center;
+
 
     &__articles {
-        @include templateGrid (3, 1fr, 5px);
+        @include templateGrid (3, 1fr, 30px);
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 10px auto;
         justify-content: center;
         align-content: center;
 
         &-ar {
-            width: 400px;
-            height: 700px;
+
+            width: 100%;
+            float: left;
             border: 1px solid black;
             margin: 10px 20px;
             padding: 10px;
             background-color:#2513D1;
             color:white;
             border-radius: 10px;
-            justify-content: center;
 
             &:hover {
                 background-color: white;
@@ -236,11 +240,13 @@
         justify-content: center;
 
         &-ar {
-
+/* 
             margin-bottom: 30px ;
             justify-content: center;
             max-width: 70%;
-            font-weight: bold;
+            font-weight: bold; */
+            width: 100%;
+            float: left;
 
             &-data {
 
@@ -297,10 +303,12 @@
 
             &-ar {
 
-                justify-content: center;
+/*                 justify-content: center;
                 padding: 20px auto;
                 margin: 10px auto;
-                max-width: 80%;
+                max-width: 80%; */
+                width: 100%;
+                float: left;
 
                 h3 {
 
@@ -327,7 +335,7 @@
                 &-data {
 
                     text-align: left;
-                    padding: 10px;
+
 
 
                     &-btn {
@@ -377,7 +385,30 @@
         }
     }
 
-}    
+    
+    .box__plan__content {
+
+        &__articles {
+
+            @include templateGrid (1, 1fr, 5px);
+
+            &-ar {
+
+    /*             max-width: 70%;
+                margin: 30px;
+                padding: 10px;
+                display: flex;
+                flex-flow: row wrap;
+                width: 40px;
+                height: 580px;
+                float: left; */
+                width: 100%;
+                float: left;
+            }    
+
+
+        }
+}   } 
 
 
 @include breakpoint (sm) {
@@ -391,9 +422,8 @@
 
             &-ar {
 
-                max-width: 90%;
-                margin: 10px;
-                padding: 10px;
+                width: 100%;
+                float: left;
 
                 h3 {
 
@@ -422,10 +452,16 @@
                     ol {
 
                         li {
-                            font-size: 18px;
+                            font-size: 15px;
                             font-weight: normal;
-                            padding: auto;
+                            margin: 7px;
+
                         }
+                    }
+
+                    &-btn {
+
+                        margin: 12px;
                     }
 
                 }
