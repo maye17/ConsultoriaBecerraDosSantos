@@ -163,7 +163,7 @@
 
             p {
                 grid: contenido;
-                width: 70%;
+                width: 100%;
                 color: white;
                 margin: 20px;
                 padding-right: 10px; 
@@ -218,11 +218,13 @@
 @include breakpoint (lg) {
 
     .box__contact { 
+
+        margin: 10px 10px;
         @include templateGrid (2,1fr, 5px);
 
         .box__container__contact {
 
-            
+            background-color: rgba(235, 235, 248, 0.758);
             height: 700px;       
             margin: 10px;
             padding: 1px;
@@ -255,8 +257,13 @@
             padding: 1px;
 
             &-form {
+
+                color:white;
+
+
                 &-input {
                     font-size: 13px;
+                    
                 }
             }
         }
@@ -264,7 +271,7 @@
 
         &__data {
             max-height: 100%;
-            width: 95%;
+            width: 100%;
            
         }
     }
@@ -276,20 +283,27 @@
 
     
     .box__contact { 
+
+        margin: 1px 0;
+        padding: 1px 0;
         @include templateGrid (1,1fr, 5px);
 
         .box__container__contact {
 
+            background-color: rgba(235, 235, 248, 0.758);
             margin: 1px;
             padding: 1px;
+            float: left;
+            max-width: 90%;
+            max-height: 100%;
 
             
             &-form {    
 
                 text-align: left;
-                color: black;
                 margin: 15px;
                 padding: 5px;
+                color:white;
 
                     &-send {
                         margin: 10px;
@@ -305,7 +319,6 @@
 
                     &-input {
 
-                        color: black;
                         font-size: 10px;
                         text-align: left;
 
@@ -313,7 +326,6 @@
 
                     &-area {
 
-                        color: black;
                         font-size: 10px;
                         text-align: left;
 
@@ -326,6 +338,10 @@
 
         &__data {
 
+            float: left;
+           max-width: 90%;
+           margin:10px 0;
+            
             
             &-article {
 
@@ -350,15 +366,20 @@
 
 
                 h3 {
+                    grid-area: titulo;
                     margin-top: 70px;
                     margin-left: 10px;
                     padding: 10px 10px 0 1px;
+                    font-size: 14px;
+                    font-weight: bold;
                 }
 
                 p {
-
+                    grid: contenido;
                     margin: 30px 0 10px 30px;
                     padding: 20px 0 0 20px;
+                    font-size: 13px;
+                    display: flex;
 
                 }
             }
