@@ -29,31 +29,10 @@
 .box__content__service-title {
     
     margin-top: 30px;
-    justify-content: center;
-    text-align: center;
-
-    
-
-    &-sepa {
-
-        width: 100%;
-        height: 5px;
-        box-shadow:
-                    100px 0 white inset,
-                    670px 0 white inset ,
-                    800px 0 #03193B inset ;
-        
-
-    }
+    justify-content: start;
+    text-align: left;
   
-
-
-    h2 {
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-    }
-
+        
     p {
         font-size: 20px;
         margin: 40px;
@@ -69,7 +48,7 @@
 
 
 .box__content__service {
-    margin: 60px 60px;
+    margin:0;
     padding: 0 20px;  
     display: flex;
     justify-content: center; 
@@ -78,7 +57,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 35px;
-        margin: 0px;
+        margin-bottom: 30px;
         justify-content: center;
         align-content: center;
         max-width: 1200px;
@@ -90,7 +69,7 @@
             padding: 20px;
             width: 380px;
             height: 400px;
-            margin-top: 10px;
+            margin:30px 0;
             border-radius: 18px;
             box-shadow: 0 25px 50px -12px rgb(0, 0, 6);
             display: flex;
@@ -175,10 +154,64 @@
 }
 
 
+.accordion-button {
+
+    
+/*     background-image: radial-gradient(circle, #520f7e, #00429d, #005fa6, #0077a0, #228a97);
+    color: white; */
+border:2px solid rgba(3, 3, 49, 0.653);
+color:  rgba(51, 51, 233, 0.582);
+
+
+
+}
+
+
+  .custom-container {
+    @include make-container(500px);
+  }
+
+
+
+.box__service__especial {
+
+
+    background-image: url(/assets/Image/geometric-gf9b83b951_640.jpg);
+    background-size: auto;
+    
+    padding: 100px;
+
+
+    h3 {
+        color: white !important;
+        margin: 30px;
+    }
+
+    
+    &-group {
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+
+        &-acor {
+
+            width: 100px !important;
+       
+    
+    
+        }
+
+    }
+
+}
+
+
 .box__boton__service {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px;
 
     &-presu {
 
@@ -240,9 +273,10 @@
         &__articles {
            grid-template-columns: repeat(2,1fr);
            align-content: center;
+           margin-bottom: 20px;
            
            &-ar {
-               margin:5px;
+               margin:20px 5px;
                padding: 3px;
 
                p {
@@ -281,6 +315,10 @@
         
     }
 
+    .custom-container {
+        @include make-container(100px);
+      }
+    
     
 
     .box__content__service{
@@ -289,7 +327,7 @@
         &__articles {
             grid-template-rows: repeat(2,1fr);
             align-content: center;
-            margin: 0 auto;
+            margin: 20px auto;
 
             &-ar {
  
@@ -334,20 +372,20 @@
 
     .box__content__service-head{
         background-image: url(/assets/Image/geometric.jpg);
-        height: 60vh;
+        height: 40vh;
         background-repeat : no-repeat;
  
 
         h2 {
 
-            font-size: 35px;
+            font-size: 45px;
             color: white;
             text-align: center;
         }
 
         h3 {
 
-            font-size: 20px;
+            font-size: 23px;
             color: white;
             margin: 0 200px;
         }
@@ -362,6 +400,19 @@
         }
     }
     
+    .accordion-button {
+        font-size: 12px;
+    }
+
+
+    .custom-container {
+        @include make-container(0);
+      }
+    
+      .list-group-item {
+          font-size: 13px;
+      }
+
     .box__content__service{
         margin: 10px auto;
         padding: 0;
@@ -447,25 +498,38 @@
         }
     }
 
+    .accordion-button {
+        font-size: 12px;
+    }
+
+
+    .custom-container {
+        @include make-container(0);
+      }
+    
+      .list-group-item {
+          font-size: 11px;
+      }
+
     .box__content__service {    
         margin: 40px auto;
         align-content: center;
 
 
         &__articles {
-            margin: 0 auto;
+            margin: 20px auto;
             align-content: center;
             text-align: center;
             display: flex;
             flex-flow: row wrap;
-            min-width: 50%;
+            min-width: 70%;
 
             &-ar {  
-                width: 280px;
+                width: 330px;
 
-                max-height: 80%;
+                max-height: 100%;
                 margin: 10px 0;
-                padding: 0 auto;  
+                padding: 10px auto;  
                 
                 img {
 
@@ -487,6 +551,18 @@
             }
         }
     
+    }
+
+    .box__service__text {
+        font-size: 14px !important;
+        text-align: justify;
+    }
+
+    .box__service__especial {
+        h3 {
+            font-size: 25px;
+            font-weight: bold;
+        }
     }
 
     .box__boton__service {
