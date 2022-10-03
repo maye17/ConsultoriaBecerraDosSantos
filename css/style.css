@@ -1039,7 +1039,7 @@ a {
   .box__content__service-title {
     margin: 20px auto; }
     .box__content__service-title p {
-      font-size: 16px; }
+      font-size: 18px; }
   .accordion-button {
     font-size: 12px; }
   .custom-container {
@@ -1063,7 +1063,7 @@ a {
         .box__content__service__articles-ar h2 {
           font-size: 20px; }
         .box__content__service__articles-ar h3 {
-          font-size: 16px; }
+          font-size: 20px; }
         .box__content__service__articles-ar p {
           font-size: 15px; }
     .box__content__service .box__boton_service {
@@ -1124,7 +1124,7 @@ a {
           width: 100px;
           height: 100px; }
         .box__content__service__articles-ar h3 {
-          font-size: 15px; }
+          font-size: 20px; }
         .box__content__service__articles-ar-p {
           font-size: 12px;
           padding: auto;
