@@ -416,7 +416,11 @@
 
     .box__plan__content {
 
+
+
         &__articles {
+
+            
 
             @include templateGrid (1, 1fr, 5px);
 
@@ -424,6 +428,8 @@
 
                 width: 100%;
                 float: left;
+                margin-bottom: 40px;
+                margin-left: 5px;
 
                 h3 {
 

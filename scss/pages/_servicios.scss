@@ -29,6 +29,8 @@
 .box__content__service-title {
     
     margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: start;
     text-align: left;
   
@@ -51,6 +53,7 @@
     margin:0;
     padding: 0 20px;  
     display: flex;
+    flex-flow: row wrap;
     justify-content: center; 
  
     &__articles {
@@ -289,6 +292,12 @@ color:  rgba(51, 51, 233, 0.582);
           
 }
 
+
+.custom-container {
+    @include make-container(50px);
+  }
+
+
 @include breakpoint (lg) {
 
     .box__content__service-head{
@@ -481,10 +490,17 @@ color:  rgba(51, 51, 233, 0.582);
     .box__content__service-title {
         
         text-align: center;
+        display: flex;
+        flex-flow: row wrap;
 
         h2 {
 
             font-size: 30px;
+        }
+
+        hr {
+
+            margin-left: 30px;
         }
 
         h3 {

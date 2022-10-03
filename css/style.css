@@ -820,6 +820,8 @@ a {
 
 .box__content__service-title {
   margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: start;
   text-align: left; }
   .box__content__service-title p {
@@ -837,6 +839,7 @@ a {
   margin: 0;
   padding: 0 20px;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center; }
   .box__content__service__articles {
     display: grid;
@@ -971,6 +974,13 @@ a {
         .box__content__service__articles-ar p {
           padding: 10px; } }
 
+.custom-container {
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto; }
+
 @media (max-width: 992px) {
   .box__content__service-head {
     background-image: url(/assets/Image/geometric.jpg);
@@ -1072,9 +1082,13 @@ a {
       color: white;
       margin: 0 50px; }
   .box__content__service-title {
-    text-align: center; }
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap; }
     .box__content__service-title h2 {
       font-size: 30px; }
+    .box__content__service-title hr {
+      margin-left: 30px; }
     .box__content__service-title h3 {
       font-size: 27px;
       margin: auto; }
@@ -1362,7 +1376,9 @@ a {
     gap: 5px; }
     .box__plan__content__articles-ar {
       width: 100%;
-      float: left; }
+      float: left;
+      margin-bottom: 40px;
+      margin-left: 5px; }
       .box__plan__content__articles-ar h3 {
         font-size: 35px; }
       .box__plan__content__articles-ar-pri h2 {
