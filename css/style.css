@@ -1177,8 +1177,10 @@ a {
     background-color: #011459; }
 
 .box__plan-title {
-  margin: 30px;
-  text-align: center; }
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f6f7; }
   .box__plan-title h3 {
     font-size: 60px;
     text-align: center;
@@ -1320,12 +1322,9 @@ a {
     padding: 20px auto;
     margin: 10px auto; }
     .box__plan__content__articles-ar {
-      /*                 justify-content: center;
-                padding: 20px auto;
-                margin: 10px auto;
-                max-width: 80%; */
       width: 100%;
-      float: left; }
+      float: left;
+      margin-bottom: 40px; }
       .box__plan__content__articles-ar h3 {
         font-weight: bold;
         margin-top: 15px; }
@@ -1366,7 +1365,7 @@ a {
                 width: 40px;
                 height: 580px;
                 float: left; */
-      width: 100%;
+      width: 80%;
       float: left; } }
 
 @media (max-width: 576px) {

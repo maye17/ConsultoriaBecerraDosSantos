@@ -40,8 +40,10 @@
 
 .box__plan-title {
     
-    margin: 30px;
+    margin-top: 20px;
+    padding: 20px;
     text-align: center;
+    background-color: #f4f6f7;
 
     h3 {
 
@@ -303,12 +305,10 @@
 
             &-ar {
 
-/*                 justify-content: center;
-                padding: 20px auto;
-                margin: 10px auto;
-                max-width: 80%; */
+
                 width: 100%;
                 float: left;
+                margin-bottom: 40px;
 
                 h3 {
 
@@ -402,7 +402,7 @@
                 width: 40px;
                 height: 580px;
                 float: left; */
-                width: 100%;
+                width: 80%;
                 float: left;
             }    
 
