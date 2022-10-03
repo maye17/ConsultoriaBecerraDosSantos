@@ -351,10 +351,15 @@
 
     display: flex;
     justify-content: center !important;
-    margin-left: 30px;
+    
 
-    .col {
-        justify-content: center;
-      
-    }
+}
+
+.col {
+    width: 70%;
+    padding: 0;
+}
+.card {
+    width: 50% !important;
+    margin: 10px auto;
 }

@@ -788,10 +788,15 @@ a {
 
 .container {
   display: flex;
-  justify-content: center !important;
-  margin-left: 30px; }
-  .container .col {
-    justify-content: center; }
+  justify-content: center !important; }
+
+.col {
+  width: 70%;
+  padding: 0; }
+
+.card {
+  width: 50% !important;
+  margin: 10px auto; }
 
 .box__content__service-head {
   background-image: url(/assets/Image/bussinesman.jpg);
