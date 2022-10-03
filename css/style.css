@@ -1226,7 +1226,7 @@ a {
       display: inline-block;
       position: relative; }
       .box__plan__content__articles-ar:hover {
-        background-image: radial-gradient(circle, #2513d1, #400db3, #490b98, #4a0e7e, #461266);
+        background-color: #563EA0;
         color: white;
         transform: translateY(-40px);
         box-shadow: 5px 10px #888888;
