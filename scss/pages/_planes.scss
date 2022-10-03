@@ -94,20 +94,34 @@
         &-ar {
 
             width: 100%;
-            float: left;
             border: 1px solid black;
             margin: 10px 20px;
             padding: 10px;
             background-color:#2513D1;
             color:white;
             border-radius: 10px;
+            display: inline-block;
+            position: relative;
 
             &:hover {
-                background-color: white;
-                color: #013553;
+                background-image: radial-gradient(circle, #2513d1, #400db3, #490b98, #4a0e7e, #461266);
+                color: white;
                 transform: translateY(-40px);
                 box-shadow: 5px 10px #888888;
                 transition: 0.5s;
+                
+            }
+
+            &-tag {
+
+                padding: 8px;
+                color: #fff;
+                background-color: rgba(255, 255, 255, 0.5);
+                position: absolute;
+                right: 0;
+                top: 0;
+                border-bottom-left-radius: 5px;
+
             }
 
             h3 {
@@ -177,7 +191,7 @@
 
                         &:hover {
                             border: 3px solid white;
-                            background-image: linear-gradient(to bottom, #051c37, #013553, #00516d, #016e84, #228c97);
+                            background-image: radial-gradient(circle, #006bc9, #015eb1, #02519a, #034584, #04396e);
                             color: white;
                         }    
                         
