@@ -7,7 +7,9 @@
         @extend .flexi;
         background-color: rgba(235, 235, 248, 0.758);
         background-image: url(/assets/Image/futuristic.jpg);
+        display: flex;
         align-items: flex-start;
+        justify-content: center;
         border-radius: 10px;
         margin: 15px 10px 10px 10px;
         padding: 15px;
@@ -221,7 +223,7 @@
     .box__contact { 
 
         margin: 10px 10px;
-        @include templateGrid (2,1fr, 5px);
+        @include templateGrid (2 ,1fr, 5px);
 
         .box__container__contact {
 
@@ -249,7 +251,7 @@
 @include breakpoint (md) {
 
     .box__contact { 
-        @include templateGrid (1,1fr, 5px);
+        @include templateGrid (1,1fr, 1px);
 
         .box__container__contact {
 
@@ -287,20 +289,21 @@
     
     .box__contact { 
 
-        margin: 1px 0;
-        padding: 1px 0;
-        @include templateGrid (1,1fr, 5px);
+        margin: 0;
+        padding: 0;
+        @include templateGrid (1, 1fr, 0px);
+
 
         .box__container__contact {
 
             background-color: rgba(235, 235, 248, 0.758);
-            margin-left: 20px;
             padding: 2px;
-            float: left;
-            max-width: 80%;
+            max-width: 70%;
             max-height: 100%;
-            justify-content: center;
-            align-items: center;
+            justify-self: center;
+            align-self: center;
+
+
 
             
             &-form {    
@@ -343,19 +346,21 @@
 
         &__data {
 
-            float: left;
-           max-width: 85%;
-           margin-left: 10px;
+            justify-self: center;
+            align-self: center;
+           max-width: 80%;
+
             
             
             &-article {
-
-
-    
+  
                 display: grid;
                 grid-template-areas: 
                 "img titulo"
                 "contenido contenido";
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
 
 
 
@@ -364,19 +369,21 @@
                     grid-area: img;
                     width: 40px;
                     height: 40px;
-                    gap:15px;
-                    margin: 30px, 40px, 60px, 0;
-                    justify-content: center;
-                    align-items: center;
-                    align-self: end;
+                    gap:5px;
+                    margin-top: 50px;
+                    margin-left: 50px;
+                    margin-right: 5px;
+                    /* margin: 30px, 10px, 60px, 0; */
+                    justify-self: center;
+                    align-self: center;
 
                 }
 
 
                 h3 {
                     grid-area: titulo;
-                    margin-top: 70px;
-                    margin-left: 10px;
+                    margin-top: 50px;
+                    margin-left: 1px;
                     padding: 10px 30px 0 1px;
                     font-size: 14px;
                     font-weight: bold;
@@ -385,9 +392,11 @@
                 p {
                     grid: contenido;
                     margin: 30px 5px 15px 30px;
-                    padding: 20px 10px 0 20px;
+                    padding: 20px 5px 0 20px;
                     font-size: 13px;
-                    display: flex;
+                    display: inline-block;
+                    position: relative;
+                
 
                 }
             }
@@ -404,4 +413,19 @@
         }
   
     }
+
+    
+//modificando clase bootstrap
+.mb-2 {
+
+    font-size: 13px !important;
+}
+
+.form-control {
+    font-size: 13px;
+}
+
+label {
+    font-size: 13px;
+}
 }    

@@ -1410,7 +1410,9 @@ a {
   .box__contact .box__container__contact {
     background-color: rgba(235, 235, 248, 0.758);
     background-image: url(/assets/Image/futuristic.jpg);
+    display: flex;
     align-items: flex-start;
+    justify-content: center;
     border-radius: 10px;
     margin: 15px 10px 10px 10px;
     padding: 15px;
@@ -1566,7 +1568,7 @@ a {
   .box__contact {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 5px; }
+    gap: 1px; }
     .box__contact .box__container__contact {
       height: 700px;
       margin: 1px;
@@ -1582,20 +1584,18 @@ a {
 
 @media (max-width: 576px) {
   .box__contact {
-    margin: 1px 0;
-    padding: 1px 0;
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 5px; }
+    gap: 0px; }
     .box__contact .box__container__contact {
       background-color: rgba(235, 235, 248, 0.758);
-      margin-left: 20px;
       padding: 2px;
-      float: left;
-      max-width: 80%;
+      max-width: 70%;
       max-height: 100%;
-      justify-content: center;
-      align-items: center; }
+      justify-self: center;
+      align-self: center; }
       .box__contact .box__container__contact-form {
         text-align: left;
         margin: 15px;
@@ -1615,34 +1615,46 @@ a {
             font-size: 10px;
             text-align: left; }
     .box__contact__data {
-      float: left;
-      max-width: 85%;
-      margin-left: 10px; }
+      justify-self: center;
+      align-self: center;
+      max-width: 80%; }
       .box__contact__data-article {
         display: grid;
-        grid-template-areas: "img titulo" "contenido contenido"; }
+        grid-template-areas: "img titulo" "contenido contenido";
+        margin: 0;
+        padding: 0;
+        max-width: 100%; }
         .box__contact__data-article img {
           grid-area: img;
           width: 40px;
           height: 40px;
-          gap: 15px;
-          margin: 30px, 40px, 60px, 0;
-          justify-content: center;
-          align-items: center;
-          align-self: end; }
+          gap: 5px;
+          margin-top: 50px;
+          margin-left: 50px;
+          margin-right: 5px;
+          /* margin: 30px, 10px, 60px, 0; */
+          justify-self: center;
+          align-self: center; }
         .box__contact__data-article h3 {
           grid-area: titulo;
-          margin-top: 70px;
-          margin-left: 10px;
+          margin-top: 50px;
+          margin-left: 1px;
           padding: 10px 30px 0 1px;
           font-size: 14px;
           font-weight: bold; }
         .box__contact__data-article p {
           grid: contenido;
           margin: 30px 5px 15px 30px;
-          padding: 20px 10px 0 20px;
+          padding: 20px 5px 0 20px;
           font-size: 13px;
-          display: flex; }
+          display: inline-block;
+          position: relative; }
   .box__content__location h2 {
     font-size: 30px;
-    border-bottom: 2px solid black; } }
+    border-bottom: 2px solid black; }
+  .mb-2 {
+    font-size: 13px !important; }
+  .form-control {
+    font-size: 13px; }
+  label {
+    font-size: 13px; } }
